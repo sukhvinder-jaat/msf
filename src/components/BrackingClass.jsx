@@ -38,7 +38,10 @@ const BrackingClass = () => {
                   </p>
 
                   {index === 0 ? (
-                    <button className=" bg-slat p-3 rounded-full hover:bg-orange transition-all ease-linear duration-300">
+                    <button
+                      className=" bg-slat p-3 rounded-full hover:bg-orange transition-all ease-linear duration-300"
+                      aria-label="button"
+                    >
                       <RotateArrow />
                     </button>
                   ) : (

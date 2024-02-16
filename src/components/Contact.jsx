@@ -47,7 +47,11 @@ const Contact = () => {
                       {value.telephone}
                     </p>
                   </div>
-                  <button className="mt-6 bg-white hover:bg-slat py-2 px-6 font-Poppins font-medium text-lg text-slat hover:text-white rounded-full transition-all ease-linear duration-300 mx-auto">
+
+                  <button
+                    className="mt-6 bg-white hover:bg-slat py-2 px-6 font-Poppins font-medium text-lg text-slat hover:text-white rounded-full transition-all ease-linear duration-300 mx-auto"
+                    aria-label="map"
+                  >
                     MAP
                   </button>
                 </div>
