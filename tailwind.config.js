@@ -29,6 +29,8 @@ module.exports = {
         lightBlack: "#4D4D4D",
         lightGray: "#26292B",
         baba: "#BABABA",
+        borderBlack: "#303030",
+        grayBlack: "#191919",
       },
     },
   },

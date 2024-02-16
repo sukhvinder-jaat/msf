@@ -45,6 +45,14 @@ export const featuredCard = [
   { path: "/assets/images/featured/minutes.png", width: "max-w-[88px]" },
   { path: "/assets/images/featured/espn.png", width: "max-w-[144px]" },
 ];
+// firm card
+export const firmCard = [
+  { path: "/assets/images/firm/time.png", width: "max-w-[169px]" },
+  { path: "/assets/images/firm/new_york.png", width: "max-w-[141px]" },
+  { path: "/assets/images/firm/today.png", width: "max-w-[120px]" },
+  { path: "/assets/images/firm/minutes.png", width: "max-w-[88px]" },
+  { path: "/assets/images/firm/wall.png", width: "max-w-[136px]" },
+];
 // global card
 export const globalCard = [
   {
@@ -121,5 +129,38 @@ export const blogCard = [
     image: "/assets/images/blog/women.png",
     title:
       "Former Anaheim elementary school teacher Richard O’ Connor sentenced to prison for possessing child pornography.",
+  },
+];
+// contactCard
+export const contactCard = [
+  {
+    title: "SOUTHERN CALIFORNIA OFFICE",
+    description: " 19100 Von Karman Avenue, Suite 800, Irvine, CA 92612",
+    phone: " (949) 252-9990",
+    telephone: " (800) 700-8450",
+  },
+  {
+    title: "NORTHERN CALIFORNIA OFFICE",
+    description: "9621 Citation Court, Suite C ,Monterey, CA 93940",
+    phone: "(831) 215-2150",
+    telephone: "(800) 700-8450",
+  },
+  {
+    title: "NEW YORK CITY OFFICE",
+    description: "747 Third Avenue, 32nd Floor, Suite 32B, New York, NY 10017",
+    phone: "(800) 700-2751",
+    telephone: "(800) 700-8450",
+  },
+  {
+    title: "NEW YORK CITY OFFICE",
+    description: "140 Grand Street, White Plains, NY 10601",
+    phone: "(800) 700-2751",
+    telephone: "(800) 700-8450",
+  },
+  {
+    title: "NEW YORK CITY OFFICE",
+    description: "300 East Lombard Street Suite 1100 Baltimore, MD 21202",
+    phone: "(800) 700-2751",
+    telephone: "(800) 700-8450",
   },
 ];
