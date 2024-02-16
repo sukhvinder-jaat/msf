@@ -10,12 +10,13 @@ const Global = () => {
     dots: false,
     arrow: false,
     loop: true,
-    slidesToShow: 1,
+    slidesToShow: 2.5,
     slidesToScroll: 1,
     // cssEase: "linear",
     infinite: true,
     vertical: true,
     centerMode: true,
+    // centerPadding: "60px",
     // draggable: true,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -58,17 +59,17 @@ const Global = () => {
               src="/assets/images/global/liner.png"
               width={612}
               height={143}
-              className="w-full absolute bottom-0 z-10 h-[173px] translate-y-[30%] rotate-180"
+              className="w-full absolute bottom-[-12%] z-10 h-[273px] translate-y-[30%] rotate-180"
               alt="liner"
             />
             {/* slider */}
             <Slider
               {...globalSlider}
-              className="w-full sm:h-[600px] h-[500px] lg:overflow-[unset] overflow-hidden lg:translate-y-[20%]"
+              className="w-full  lg:overflow-[unset] overflow-hidden  global"
             >
               {globalCard.map((value, index) => (
                 <div
-                  className="w-full md:py-9 py-5 md:px-7 px-4 border border-lightGray rounded my-6 relative group transition-all ease-linear duration-300 "
+                  className="w-full md:py-9 py-5 md:px-7 px-4 border border-lightGray rounded my-6 relative group transition-all ease-linear duration-300"
                   key={index}
                 >
                   <div className="flex sm:items-center sm:flex-row flex-col gap-2 sm:mb-0 mb-2">

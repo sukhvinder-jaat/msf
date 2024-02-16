@@ -6,7 +6,7 @@ import BlueButton from "./common/BlueButton";
 
 const BrackingClass = () => {
   return (
-    <div className=" bg-black pt-12 pb-24">
+    <div className=" bg-black pt-12 pb-24 overflow-hidden">
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
         <div className=" flex items-center justify-center mb-3">
           <HalfArrowWhite />
@@ -20,7 +20,7 @@ const BrackingClass = () => {
         <div className=" flex flex-wrap">
           {brackingCard.map((value, index) => {
             return (
-              <div className=" w-6/12 px-3 relative" key={index}>
+              <div className=" md:w-6/12 w-full px-3 relative" key={index}>
                 <Image
                   src={value.path}
                   alt="hand"
@@ -28,9 +28,9 @@ const BrackingClass = () => {
                   width={558}
                   height={475}
                 />
-                <div className=" flex items-center justify-between ps-5 pe-10 absolute bottom-5 w-full">
+                <div className=" flex lg:items-center items-start justify-between lg:flex-row flex-col ps-5 pe-10 absolute bottom-5 w-full">
                   <p
-                    className={`font-Bahnschrift font-semibold text-xxl text-white ${
+                    className={`font-Bahnschrift font-semibold md:text-xxl text-lg text-white ${
                       index === 0 ? "max-w-[323px]" : "max-w-[200px]"
                     }`}
                   >

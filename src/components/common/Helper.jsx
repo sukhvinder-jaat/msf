@@ -98,3 +98,28 @@ export const brackingCard = [
     title: "California Schools Sexual Abuse",
   },
 ];
+// pursueFeature
+export const pursueFeature = [
+  "The abuser who was directly responsible",
+  "Any coworkers, staff members, or others who knew of the abuse but did not come forward to report it",
+  "Any larger organizations or institutions who failed to take action against the abuse",
+  "Any potential law enforcement officials who exercised negligence in allowing the abuse to occur",
+];
+// blogCard
+export const blogCard = [
+  {
+    image: "/assets/images/blog/man.png",
+    title:
+      "At Manly Stewart & Finaldi, our attorneys routinely represent sexual assault victims in high-profile national cases.",
+  },
+  {
+    image: "/assets/images/blog/law.png",
+    title:
+      "Riverside Country school principle Greg Anderson arrested for allegedly failing to report abuse.",
+  },
+  {
+    image: "/assets/images/blog/women.png",
+    title:
+      "Former Anaheim elementary school teacher Richard O’ Connor sentenced to prison for possessing child pornography.",
+  },
+];
