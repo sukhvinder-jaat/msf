@@ -1,9 +1,11 @@
+import Attorneys from "@/components/Attorneys";
 import Blog from "@/components/Blog";
 import BrackingClass from "@/components/BrackingClass";
 import California from "@/components/California";
 import ChooseUs from "@/components/ChooseUs";
 import Contact from "@/components/Contact";
 import Featured from "@/components/Featured";
+import Footer from "@/components/Footer";
 import GetUpdate from "@/components/GetUpdate";
 import Global from "@/components/Global";
 import Hero from "@/components/Hero";
@@ -25,6 +27,8 @@ export default function Home() {
       <YourFirm />
       <Contact />
       <GetUpdate />
+      <Attorneys />
+      <Footer />
     </>
   );
 }

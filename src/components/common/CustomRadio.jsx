@@ -5,11 +5,11 @@ const CustomRadio = ({ options, selectedValue, onChange, name, error }) => {
       {options.map((option, index) => (
         <label
           key={index}
-          className=" font-Poppins md:text-lg text-base font-semibold flex gap-3 w-6/12"
+          className=" font-Poppins md:text-lg sm:text-base text-sm font-semibold flex gap-3 w-6/12 items-start"
         >
           <input
             type="radio"
-            className="assent_orange"
+            className="assent_orange mt-[2px]"
             name={name}
             value={option.value}
             checked={selectedValue === option.value}

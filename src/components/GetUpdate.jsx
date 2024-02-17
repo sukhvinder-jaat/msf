@@ -10,9 +10,8 @@ import CommonTextArea from "./common/CommonTextArea";
 import BlueButton from "./common/BlueButton";
 
 const GetUpdate = () => {
-  const form = useRef(); // Reference to the form element
+  const form = useRef();
   const [formData, SetFormData] = useState({
-    // State to hold form data
     name: "",
     email: "",
     last: "",
@@ -23,7 +22,6 @@ const GetUpdate = () => {
     checkBox: false,
   });
 
-  // Handler function to update form data
   const inputHandler = (e) => {
     const { name, value } = e.target;
     // Enforce maximum one digit at a time for phone number input
@@ -34,7 +32,7 @@ const GetUpdate = () => {
     SetFormData({ ...formData, [name]: value });
   };
 
-  const [error, setError] = useState(false); // State to manage form submission error
+  const [error, setError] = useState(false);
 
   const emailRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -42,7 +40,6 @@ const GetUpdate = () => {
   const phoneRegex = /^\d{10}$/;
   const FormSubmit = (e) => {
     e.preventDefault();
-    // Form validation
     if (
       formData.name.trim() !== "" &&
       formData.checkBox &&
@@ -55,7 +52,6 @@ const GetUpdate = () => {
       formData.city.trim() !== "country"
     ) {
       setError(false);
-      // Sending form data via emailjs
       emailjs
         .sendForm(
           "service_rhvi6ne",
@@ -64,7 +60,6 @@ const GetUpdate = () => {
           "VdFIJa-Q4kIcZzKM7"
         )
         .then(() => {
-          // Reset form data on successful submission
           SetFormData({
             name: "",
             email: "",
@@ -77,7 +72,7 @@ const GetUpdate = () => {
           });
         });
     } else {
-      setError(true); // Set error state if form validation fails
+      setError(true);
     }
   };
 
@@ -96,7 +91,6 @@ const GetUpdate = () => {
         </p>
         <form ref={form} onSubmit={FormSubmit}>
           <div className="flex flex-wrap">
-            {/* Input fields */}
             <div className=" w-6/12 relative pb-7 md:pe-5 pe-2">
               <CommonInput
                 type="text"
@@ -109,7 +103,42 @@ const GetUpdate = () => {
                 label="First Name"
               />
             </div>
-            {/* Select field */}
+            <div className=" w-6/12 relative pb-7 md:ps-5 ps-2">
+              <CommonInput
+                type="text"
+                placeholder="Last Name"
+                value={formData.last}
+                onChange={inputHandler}
+                id="last"
+                name="last"
+                error={error}
+                label="Last Name"
+              />
+            </div>
+            <div className=" w-6/12 relative pb-7 md:pe-5 pe-2">
+              <CommonInput
+                type="number"
+                placeholder="Phone Number"
+                value={formData.phone}
+                onChange={inputHandler}
+                id="phone"
+                name="phone"
+                error={error}
+                label="Phone Number"
+              />
+            </div>
+            <div className=" w-6/12 relative pb-7 md:ps-5 ps-2">
+              <CommonInput
+                type="email"
+                placeholder="Email address"
+                value={formData.email}
+                onChange={inputHandler}
+                id="email"
+                name="email"
+                error={error}
+                label="Email"
+              />
+            </div>
             <div className="relative w-full mb-7">
               <CommonSelect
                 value={formData.city}
@@ -120,7 +149,6 @@ const GetUpdate = () => {
                 error={error}
               />
             </div>
-            {/* Radio buttons */}
             <div className="">
               <p className=" text-black md:text-2xl text-xl font-Poppins font-medium mb-6">
                 Institution Involved <span className=" text-slat">*</span>
@@ -135,7 +163,6 @@ const GetUpdate = () => {
                 error={error}
               />
             </div>
-            {/* Textarea */}
             <div className=" w-full my-7">
               <CommonTextArea
                 type="text"
@@ -148,7 +175,6 @@ const GetUpdate = () => {
                 label="Reason for inquiry"
               />
             </div>
-            {/* Disclaimer and checkbox */}
             <div>
               <p className=" font-bold text-orange font-Poppins md:text-2xl text-xl mb-2">
                 Disclaimer*
@@ -185,7 +211,6 @@ const GetUpdate = () => {
               </div>
             </div>
           </div>
-          {/* Submit button */}
           <div className="flex justify-center mt-12 mb-24">
             <BlueButton title="Send Message" />
           </div>

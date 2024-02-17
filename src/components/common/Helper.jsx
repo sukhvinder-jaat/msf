@@ -1,4 +1,14 @@
-import { ChooseExperience, ChooseIntelligence, ChooseTrust } from "./Icon";
+import {
+  ChooseExperience,
+  ChooseIntelligence,
+  ChooseTrust,
+  Fackbook,
+  GooglePay,
+  Instagram,
+  Linkedin,
+  Twitter,
+  YouTube,
+} from "./Icon";
 
 // nav bar links
 export const navBarLink = [
@@ -174,9 +184,53 @@ export const radioInput = [
   { label: "Church", value: "Church" },
   { label: "Hospital/Doctor", value: "Hospital/Doctor" },
   { label: "School", value: "School" },
-  { label: "Youth/Sports Organization", value: "Youth/Sports Organization" },
+  { label: "Youth/Sports Organization", value: "Youth/ Sports Organization" },
   { label: "Uber/Lyft", value: "Uber/Lyft" },
   { label: "Nursing/Assisted Living", value: "Nursing/Assisted Living" },
   { label: "Massage", value: "Massage" },
   { label: "Friends/Family", value: "Friends/Family" },
+];
+// footer icon
+export const FooterLinks = [
+  {
+    title: "Links",
+    link: [
+      { links: "Home", path: "#Hogar" },
+      { links: "About", path: "#Misión" },
+      { links: "Attorneys", path: "#Tragamonedas" },
+      { links: "Practice Areas", path: "#Porqué" },
+      { links: "Results", path: "#Ofertas" },
+      { links: "Media", path: "#Ofertas" },
+    ],
+  },
+  {
+    title: "Company",
+    link: [
+      { links: "Contact Us", path: "/" },
+      { links: "Locations", path: "/" },
+      { links: "Our Mission", path: "/" },
+    ],
+  },
+  {
+    title: "Services",
+    link: [
+      { links: "Privacy Policy", path: "#" },
+      { links: "Terms of Services", path: "#" },
+    ],
+  },
+];
+export const FooterIcon = [
+  {
+    link: [
+      { icon: <Fackbook />, path: "https://www.facebook.com/" },
+      { icon: <Twitter />, path: "https://twitter.com/?lang=en" },
+      {
+        icon: <Instagram />,
+        path: "https://www.instagram.com/accounts/login/",
+      },
+      { icon: <Linkedin />, path: "linkedin.com" },
+      { icon: <YouTube />, path: "https://youtube.com/" },
+      { icon: <GooglePay />, path: "https://pay.google.com/about/" },
+    ],
+  },
 ];
