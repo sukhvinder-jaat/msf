@@ -4,6 +4,7 @@ import California from "@/components/California";
 import ChooseUs from "@/components/ChooseUs";
 import Contact from "@/components/Contact";
 import Featured from "@/components/Featured";
+import GetUpdate from "@/components/GetUpdate";
 import Global from "@/components/Global";
 import Hero from "@/components/Hero";
 import Pursue from "@/components/Pursue";
@@ -23,6 +24,7 @@ export default function Home() {
       <Blog />
       <YourFirm />
       <Contact />
+      <GetUpdate />
     </>
   );
 }

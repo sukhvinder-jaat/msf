@@ -14,6 +14,8 @@ const ChooseUs = () => {
           height={163}
           className="max-w-[520px] max-h-[123px] absolute end-0 top-[-10%] pointer-events-none"
           alt="choose us"
+          loading="lazy"
+          sizes="100vw"
         />
         <span className=" start-[-5px] absolute md:top-[30%] top-[15%]">
           <HalfCircle />

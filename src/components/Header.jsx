@@ -31,6 +31,7 @@ const Header = () => {
           height={56}
           alt="Logo"
           loading="lazy"
+          sizes="100vw"
           className="h-8 w-full sm:min-h-[56px] sm:max-w-[136px] max-w-[100px]"
         />
         {/* Desktop links */}

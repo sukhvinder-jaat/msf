@@ -55,3 +55,10 @@
     @apply !text-slat mb-7;
   }
 }
+/* get update */
+.assent_orange {
+  accent-color: #cd520f;
+}
+.assent_slat {
+  accent-color: #2b587f;
+}

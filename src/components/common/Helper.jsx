@@ -164,3 +164,19 @@ export const contactCard = [
     telephone: "(800) 700-8450",
   },
 ];
+export const cityInput = [
+  { label: "country", value: "country" },
+  { label: "india", value: "india" },
+  { label: "usa", value: "usa" },
+  { label: "brazil", value: "brazil" },
+];
+export const radioInput = [
+  { label: "Church", value: "Church" },
+  { label: "Hospital/Doctor", value: "Hospital/Doctor" },
+  { label: "School", value: "School" },
+  { label: "Youth/Sports Organization", value: "Youth/Sports Organization" },
+  { label: "Uber/Lyft", value: "Uber/Lyft" },
+  { label: "Nursing/Assisted Living", value: "Nursing/Assisted Living" },
+  { label: "Massage", value: "Massage" },
+  { label: "Friends/Family", value: "Friends/Family" },
+];

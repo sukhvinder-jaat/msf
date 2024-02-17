@@ -27,6 +27,8 @@ const BrackingClass = () => {
                   className="w-full"
                   width={558}
                   height={475}
+                  loading="lazy"
+                  sizes="100vw"
                 />
                 <div className=" flex lg:items-center items-start justify-between lg:flex-row flex-col ps-5 pe-10 absolute bottom-5 w-full">
                   <p

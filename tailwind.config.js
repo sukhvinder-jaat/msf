@@ -26,6 +26,7 @@ module.exports = {
         dustWhite: "#B2B2B2",
         darkWhite: "#E5E5E5",
         darkBlue: "#2B587F40",
+        lightBlack33: "#333333",
         lightBlack: "#4D4D4D",
         lightGray: "#26292B",
         baba: "#BABABA",

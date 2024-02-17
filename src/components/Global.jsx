@@ -54,6 +54,8 @@ const Global = () => {
               height={143}
               className="w-full absolute top-0 z-10 h-[173px] translate-y-[-30%]"
               alt="liner"
+              loading="lazy"
+              sizes="100vw"
             />
             <Image
               src="/assets/images/global/liner.png"
@@ -61,6 +63,8 @@ const Global = () => {
               height={143}
               className="w-full absolute bottom-[-12%] z-10 h-[273px] translate-y-[30%] rotate-180"
               alt="liner"
+              loading="lazy"
+              sizes="100vw"
             />
             {/* slider */}
             <Slider
