@@ -12,24 +12,11 @@ const Global = () => {
     loop: true,
     slidesToShow: 2.5,
     slidesToScroll: 1,
-    // cssEase: "linear",
     infinite: true,
     vertical: true,
     centerMode: true,
-    // centerPadding: "60px",
-    // draggable: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1024,
-
-        vertical: false,
-      },
-      {
-        breakpoint: 768,
-      },
-    ],
   };
   return (
     <div className="bg-black overflow-hidden relative pb-[107px]">

@@ -11,6 +11,7 @@ import Global from "@/components/Global";
 import Hero from "@/components/Hero";
 import Pursue from "@/components/Pursue";
 import Representation from "@/components/Representation";
+import WhyWe from "@/components/WhyWe";
 import YourFirm from "@/components/YourFirm";
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Featured />
       <ChooseUs />
       <Global />
+      <WhyWe />
       <BrackingClass />
       <Representation />
       <Pursue />
