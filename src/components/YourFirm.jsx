@@ -6,6 +6,15 @@ import { firmCard } from "./common/Helper";
 const YourFirm = () => {
   return (
     <div className=" bg-white pt-20  pb-[103px] relative">
+      <span className=" absolute top-[12%] end-0">
+        <Image
+          src="/assets/images/bracking/dots.png"
+          width={84}
+          height={83}
+          alt="dots"
+          className=" max-w-[54px] max-h-[84px]"
+        />
+      </span>
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
         <Heading heading="Our firm in the news" />
       </div>

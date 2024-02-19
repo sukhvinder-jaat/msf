@@ -15,36 +15,57 @@ export const navBarLink = [
   {
     path: "#",
     title: "Home",
-    option: ["option1", "option2"],
+    option: [
+      { subLink: "#Practice1", subLink: "Practice1" },
+      { subLink: "#Practice2", subLink: "Practice2" },
+    ],
   },
   {
     path: "#",
     title: "About Us",
-    option: ["option1", "option2"],
+    option: [
+      { subLink: "#about1", subPath: "about1" },
+      { subLink: "#about2", subPath: "about2" },
+    ],
   },
   {
     path: "#",
     title: "Attorneys",
-    option: ["option1", "option2"],
+    option: [
+      { subLink: "#Attorneys1", subPath: "Attorneys1" },
+      { subLink: "#Attorneys2", subPath: "Attorneys2" },
+    ],
   },
   {
     path: "#",
     title: "Practice Areas",
-    option: ["option1", "option2"],
+    option: [
+      { subLink: "#Practice1", subPath: "Practice1" },
+      { subLink: "#Practice2", subPath: "Practice2" },
+    ],
   },
   {
     path: "#",
-    option: ["option1", "option2"],
+    option: [
+      { subLink: "#Practice1", subPath: "Practice1" },
+      { subLink: "#Practice2", subPath: "Practice2" },
+    ],
     title: "Results",
   },
   {
     path: "#",
-    option: ["option1", "option2"],
+    option: [
+      { subLink: "#Practice1", subPath: "Practice1" },
+      { subLink: "#Practice2", subPath: "Practice2" },
+    ],
     title: "Media",
   },
   {
     path: "#",
-    option: ["option1", "option2"],
+    option: [
+      { subLink: "#Practice1", subPath: "Practice1" },
+      { subLink: "#Practice2", subPath: "Practice2" },
+    ],
     title: "Contact",
   },
 ];

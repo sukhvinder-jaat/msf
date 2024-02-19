@@ -65,10 +65,10 @@ const Header = () => {
                       hideArrow ? "hidden" : "block"
                     }`}
                   >
-                    {link.option.map((option, subIndex) => {
+                    {link.option.map((options, subIndex) => {
                       return (
-                        <Link key={subIndex} href="/">
-                          {option}
+                        <Link key={subIndex} href={options.subLink}>
+                          {options.subPath}
                         </Link>
                       );
                     })}
@@ -96,7 +96,7 @@ const Header = () => {
         <div className="p-4 flex flex-col justify-center items-center h-full relative z-50">
           {/* Close button for sidebar */}
           <button
-            className="text-orange text-3xl absolute top-10 end-5"
+            className="text-orange text-3xl absolute top-5 end-5"
             onClick={sidebarHandler}
             aria-label="sidebar handler"
           >
@@ -135,10 +135,10 @@ const Header = () => {
                         hideArrow ? "hidden" : "block"
                       }`}
                     >
-                      {link.option.map((option, subIndex) => {
+                      {link.option.map((options, subIndex) => {
                         return (
-                          <Link key={subIndex} href="/">
-                            {option}
+                          <Link key={subIndex} href={options.subLink}>
+                            {options.subPath}
                           </Link>
                         );
                       })}

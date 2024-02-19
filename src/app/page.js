@@ -16,21 +16,23 @@ import YourFirm from "@/components/YourFirm";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Featured />
-      <ChooseUs />
-      <Global />
-      <WhyWe />
-      <BrackingClass />
-      <Representation />
-      <Pursue />
-      <California />
-      <Blog />
-      <YourFirm />
-      <Contact />
-      <GetUpdate />
-      <Attorneys />
-      <Footer />
+      <div className=" overflow-hidden">
+        <Hero />
+        <Featured />
+        <ChooseUs />
+        <Global />
+        <WhyWe />
+        <BrackingClass />
+        <Representation />
+        <Pursue />
+        <California />
+        <Blog />
+        <YourFirm />
+        <Contact />
+        <GetUpdate />
+        <Attorneys />
+        <Footer />
+      </div>
     </>
   );
 }

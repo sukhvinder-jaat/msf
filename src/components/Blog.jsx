@@ -36,7 +36,16 @@ const Blog = () => {
     sliderRef.current.slickNext();
   };
   return (
-    <div className=" bg-white pt-20 pb-0 overflow-hidden">
+    <div className=" bg-white pt-20 pb-0 overflow-hidden relative">
+      <Image
+        src="/assets/images/blog/our_blog.png"
+        width={628}
+        height={113}
+        className="max-w-[450px] max-h-[113px] absolute start-0 top-[5%] pointer-events-none"
+        alt="choose us"
+        loading="lazy"
+        sizes="100vw"
+      />
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
         <Heading heading="OUR BLOGS" />
         <p className=" font-Bahnschrift font-light md:text-5xl sm:text-4xl text-3xl text-black text-center mt-3 leading-[normal]">
@@ -93,13 +102,13 @@ const Blog = () => {
           </div>
           <div className=" flex items-center justify-center w-full gap-3">
             <span
-              className=" xl:absolute top-[50%] translate-y-[-50%] start-[-50px]"
+              className=" xl:absolute top-[50%] translate-y-[-3%] start-[-50px]"
               onClick={prevSlideHandler}
             >
               <CircleArrow />
             </span>
             <span
-              className=" xl:absolute top-[50%] translate-y-[-50%] end-[-50px] rotate-180"
+              className=" xl:absolute top-[50%] translate-y-[-3%] end-[-50px] rotate-180"
               onClick={nextSlideHandler}
             >
               <CircleArrow />

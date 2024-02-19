@@ -1,9 +1,32 @@
 import React from "react";
 import { contactCard } from "./common/Helper";
-
+import { HalfCircle } from "./common/Icon";
+import Image from "next/image";
 const Contact = () => {
   return (
-    <div className=" bg-black pt-14 pb-[74px]">
+    <div className=" bg-black pt-14 pb-[74px] relative">
+      
+      <span className=" absolute bottom-[12%] start-0">
+        <Image
+          src="/assets/images/bracking/dots.png"
+          width={84}
+          height={83}
+          alt="dots"
+          className=" max-w-[44px] max-h-[74px]"
+        />
+      </span>
+      <span className=" absolute bottom-[10%] end-0">
+        <Image
+          src="/assets/images/bracking/dots.png"
+          width={84}
+          height={83}
+          alt="dots"
+          className=" max-w-[44px] max-h-[74px]"
+        />
+      </span>
+      <span className=" absolute end-[-0.2%] top-[25%]">
+        <HalfCircle />
+      </span>
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
         <p className=" font-Bahnschrift font-light md:text-5xl sm:text-4xl text-3xl text-white text-center mt-3 leading-[normal] max-w-[780px] mx-auto mb-9">
           Contact Our{" "}

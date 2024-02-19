@@ -1,12 +1,24 @@
 import React from "react";
-import { HalfArrowWhite, RotateArrow } from "./common/Icon";
+import { HalfArrowWhite, HalfCircle, RotateArrow } from "./common/Icon";
 import Image from "next/image";
 import { brackingCard } from "./common/Helper";
 import BlueButton from "./common/BlueButton";
 
 const BrackingClass = () => {
   return (
-    <div className=" bg-black pt-12 pb-24 overflow-hidden">
+    <div className=" bg-black pt-12 pb-24 overflow-hidden relative">
+      <span className=" absolute top-[52%]">
+        <HalfCircle />
+      </span>
+      <span className=" absolute bottom-[12%] end-0">
+        <Image
+          src="/assets/images/bracking/dots.png"
+          width={84}
+          height={83}
+          alt="dots"
+          className=" max-w-[54px] max-h-[84px]"
+        />
+      </span>
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
         <div className=" flex items-center justify-center mb-3">
           <HalfArrowWhite />
@@ -14,7 +26,7 @@ const BrackingClass = () => {
             BRACKING CASES
           </p>
         </div>
-        <p className=" font-Bahnschrift text-white font-light text-5xl text-center mb-12">
+        <p className=" font-Bahnschrift text-white font-light md:text-5xl text-3xl text-center mb-12">
           Were You <span className=" text-orange font-bold">a Victim</span> of
         </p>
         <div className=" flex flex-wrap">

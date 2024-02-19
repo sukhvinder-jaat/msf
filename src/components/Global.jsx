@@ -20,7 +20,7 @@ const Global = () => {
   };
   return (
     <div className="bg-black overflow-hidden relative pb-[107px]">
-      <span className=" start-[-5px] absolute md:top-[35%] top-[15%] md:block hidden">
+      <span className=" start-[-5px] absolute md:top-[35%] top-[15%] lg:block hidden">
         <HalfCircle />
       </span>
       <Image
@@ -48,7 +48,7 @@ const Global = () => {
               src="/assets/images/global/liner.png"
               width={612}
               height={143}
-              className="w-full absolute bottom-[-12%] z-10 h-[273px] translate-y-[30%] rotate-180"
+              className="w-full absolute bottom-[12%] z-10 h-[273px] translate-y-[30%] rotate-180"
               alt="liner"
               loading="lazy"
               sizes="100vw"

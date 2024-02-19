@@ -8,6 +8,7 @@ import CustomRadio from "./common/CustomRadio";
 import CommonSelect from "./common/CommonSelect";
 import CommonTextArea from "./common/CommonTextArea";
 import BlueButton from "./common/BlueButton";
+import { HalfCircle } from "./common/Icon";
 
 const GetUpdate = () => {
   const form = useRef();
@@ -77,7 +78,13 @@ const GetUpdate = () => {
   };
 
   return (
-    <div className=" bg-white pt-36">
+    <div className=" bg-white pt-36 relative">
+      <span className=" absolute top-[31%] start-[-5px] xl:block hidden">
+        <HalfCircle />
+      </span>
+      <span className=" absolute bottom-[13%] end-[-5px] xl:block hidden">
+        <HalfCircle />
+      </span>
       <div className="xl:max-w-[845px] mx-auto xl:px-0 px-3">
         <Heading heading="GET UPDATED WITH US" />
         <p className=" font-Bahnschrift font-light md:text-5xl text-3xl text-center mt-3 mb-4">

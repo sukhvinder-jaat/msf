@@ -1,12 +1,26 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Header from "./Header";
 import Image from "next/image";
 import BlueButton from "./common/BlueButton";
-
+// import sample_video from "/assets/video/sample_video.mp4";
 const Hero = () => {
+  const [isVideoPlaying, setVideoPlaying] = useState(false);
+
+  const videoPlayHandler = () => {
+    if (!isVideoPlaying) {
+      setVideoPlaying(true);
+      const video = document.getElementById("videoElement");
+      if (video) {
+        video.play();
+      }
+    } else {
+      setVideoPlaying(false);
+    }
+  };
   return (
     <>
-      <div className="bg-black min-h-screen flex flex-col justify-center relative overflow-hidden">
+      <div className="bg-[url('/assets/images/background/hero.png')] bg-cover bg-no-repeat min-h-screen flex flex-col justify-center relative overflow-hidden">
         <Header />
         <Image
           src="/assets/images/hero/white_dot.png"
@@ -66,24 +80,6 @@ const Hero = () => {
             </div>
             <div className="lg:w-7/12 w-full relative xl:max-w-[707px] max-w-[700px]">
               <Image
-                src="/assets/images/hero/women.png"
-                width={707}
-                height={378}
-                alt="line"
-                sizes="100vw"
-                loading="lazy"
-                className="w-full xl:max-w-[707px] max-w-[700px] relative z-10"
-              />
-              <Image
-                src="/assets/images/hero/play_btn.svg"
-                width={51}
-                height={51}
-                alt="line"
-                sizes="100vw"
-                loading="lazy"
-                className="w-full xl:max-w-[51px] max-w-[41px] absolute top-[50%] start-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer z-20"
-              />
-              <Image
                 src="/assets/images/hero/dots.png"
                 width={84}
                 height={84}
@@ -92,6 +88,39 @@ const Hero = () => {
                 loading="lazy"
                 className="w-full xl:max-w-[84px] max-w-[41px] absolute top-[-5%] end-[-3.5%]"
               />
+              <div className="relative rounded overflow-hidden">
+                <video
+                  id="videoElement"
+                  onClick={videoPlayHandler}
+                  controls
+                  className="w-full h-full"
+                  poster={"/assets/images/hero/women.png"}
+                >
+                  <source
+                    src={"/assets/video/sample_video.mp4"}
+                    type="video/mp4"
+                  />
+                </video>
+                {!isVideoPlaying && (
+                  <div className="absolute top-0 left-0 w-full h-full">
+                    <img
+                      src={"/assets/images/hero/play_btn.svg"}
+                      alt="play button"
+                      className="sm:w-16 sm:h-16 w-10 h-10 object-contain cursor-pointer absolute translate-x-[-50%] translate-y-[-50%] top-[50%] start-[50%] z-20"
+                      onClick={videoPlayHandler}
+                    />
+                    <Image
+                      src="/assets/images/hero/women.png"
+                      width={707}
+                      height={378}
+                      alt="line"
+                      sizes="100vw"
+                      loading="lazy"
+                      className="w-full z-10 absolute h-full"
+                    />
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
