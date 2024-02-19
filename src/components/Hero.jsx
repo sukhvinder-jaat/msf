@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Image from "next/image";
 import BlueButton from "./common/BlueButton";
-// import sample_video from "/assets/video/sample_video.mp4";
 const Hero = () => {
   const [isVideoPlaying, setVideoPlaying] = useState(false);
 
@@ -20,7 +19,10 @@ const Hero = () => {
   };
   return (
     <>
-      <div className="bg-[url('/assets/images/background/hero.png')] bg-cover bg-no-repeat min-h-screen flex flex-col justify-center relative overflow-hidden">
+      <div
+        className="bg-hero bg-cover bg-no-repeat min-h-screen flex flex-col justify-center relative overflow-hidden"
+        id="hero"
+      >
         <Header />
         <Image
           src="/assets/images/hero/white_dot.png"

@@ -13,10 +13,12 @@ import Pursue from "@/components/Pursue";
 import Representation from "@/components/Representation";
 import WhyWe from "@/components/WhyWe";
 import YourFirm from "@/components/YourFirm";
+import BackToTop from "@/components/common/BackToTop";
 export default function Home() {
   return (
     <>
       <div className=" overflow-hidden">
+        <BackToTop />
         <Hero />
         <Featured />
         <ChooseUs />

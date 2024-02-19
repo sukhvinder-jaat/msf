@@ -17,7 +17,7 @@ const CommonTextArea = ({
       </label>
       <div className=" relative">
         <textarea
-          className="outline-none text-[#CCCCCC] placeholder:text-[#CCCCCC] border border-[#CCCCCC] px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full min-h-[135px]"
+          className="outline-none text-whiteDustC placeholder:text-whiteDustC border border-whiteDustC px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full min-h-[135px]"
           type={type}
           placeholder={placeholder}
           value={value}

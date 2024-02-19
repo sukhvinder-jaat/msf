@@ -18,7 +18,7 @@ const WhyWe = () => {
     autoplaySpeed: 3000,
   };
   return (
-    <div className="pt-28 relative pb-32">
+    <div className="pt-28 relative md:pb-32 pb-20" id="why_we">
       <Image
         src="/assets/images/why_we/why_we.png"
         width={628}
@@ -30,12 +30,12 @@ const WhyWe = () => {
       />
 
       <Heading heading="WHY WE ARE " />
-      <p className="font-Bahnschrift text-black font-light md:text-5xl text-3xl text-center mt-3 mb-12">
+      <p className="font-Bahnschrift text-black font-light md:text-5xl text-3xl text-center mt-3 md:mb-12 mb-8">
         California <span className="text-orange font-bold">Sexual Abuse</span>{" "}
         Attorneys
       </p>
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
-        <div className="flex flex-wrap py-10 lg:justify-between justify-center">
+        <div className="flex flex-wrap md:py-10 lg:justify-between justify-center">
           <div className="lg:w-6/12 sm:w-8/12 w-full lg:mt-0 mt-12 z-20 relative lg:mb-0 mb-5">
             <Image
               src="/assets/images/why_we/metting.png"

@@ -5,7 +5,7 @@ const Attorneys = () => {
   return (
     <div className=" mt-16 relative z-0">
       <div className="container xl:max-w-[1140px] mx-auto  px-3">
-        <div className=" bg-[url('/assets/images/background/refer.png')] bg-cover bg-no-repeat py-11 rounded flex flex-col justify-center items-center px-4 relative">
+        <div className=" bg-attorneys bg-cover bg-no-repeat py-11 rounded flex flex-col justify-center items-center px-4 relative">
           <span className=" absolute top-[12%] start-0 lg:block hidden">
             <Image
               src="/assets/images/refer/white_circle.png"

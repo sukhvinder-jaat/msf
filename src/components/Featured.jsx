@@ -6,7 +6,7 @@ import { HalfCircle } from "./common/Icon";
 
 const Featured = () => {
   return (
-    <div className=" bg-white pt-20  pb-[136px] relative">
+    <div className=" bg-white pt-20  pb-[136px] relative" id="featured">
       <Image
         src="/assets/images/hero/white_dot.png"
         width={30}

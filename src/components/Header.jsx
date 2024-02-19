@@ -67,7 +67,11 @@ const Header = () => {
                   >
                     {link.option.map((options, subIndex) => {
                       return (
-                        <Link key={subIndex} href={options.subLink}>
+                        <Link
+                          className="hover:text-orange"
+                          key={subIndex}
+                          href={options.subLink}
+                        >
                           {options.subPath}
                         </Link>
                       );
@@ -114,11 +118,11 @@ const Header = () => {
               return (
                 <li
                   key={index}
-                  className="text-white font-Poppins  font-semibold text-base leading-[150%]"
+                  className="text-white font-Poppins font-semibold text-base leading-[150%]"
                 >
                   <Link
                     href={link.path}
-                    className=" flex items-center gap-1 relative group hover_stroke"
+                    className=" flex items-center gap-1 relative group/item hover_stroke"
                   >
                     {link.title}
                     <span
@@ -131,13 +135,18 @@ const Header = () => {
                       <DownArrow />
                     </span>
                     <div
-                      className={`absolute opacity-0 group-hover:opacity-100 hidden group-hover:flex group-hover:z-10 -z-10 bg-black right-0  flex-col gap-3 top-[100%] transition-all ease-linear duration-300 ${
+                      className={`absolute opacity-0 group-hover/item:opacity-100 hidden group-hover/item:flex group-hover/item:z-10 -z-10 bg-black right-0 flex-col gap-3 top-[100%] transition-all ease-linear duration-300 px-2  ${
                         hideArrow ? "hidden" : "block"
                       }`}
                     >
                       {link.option.map((options, subIndex) => {
                         return (
-                          <Link key={subIndex} href={options.subLink}>
+                          <Link
+                            className="hover:text-orange"
+                            key={subIndex}
+                            href={options.subLink}
+                            onClick={sidebarHandler}
+                          >
                             {options.subPath}
                           </Link>
                         );

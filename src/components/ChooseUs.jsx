@@ -7,7 +7,7 @@ import { HalfCircle } from "./common/Icon";
 const ChooseUs = () => {
   return (
     <>
-      <div className=" relative mb-32">
+      <div className=" relative md:mb-32 mb-20">
         <Image
           src="/assets/images/choose_us/choose_us.png"
           width={628}

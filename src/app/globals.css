@@ -3,6 +3,9 @@
   font-family: "Bahnschrift";
   src: url(/assets/fonts/BAHNSCHRIFT.TTF);
 }
+* {
+  scroll-behavior: smooth !important;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

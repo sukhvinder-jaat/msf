@@ -6,7 +6,7 @@ import BlueButton from "./common/BlueButton";
 
 const BrackingClass = () => {
   return (
-    <div className=" bg-black pt-12 pb-24 overflow-hidden relative">
+    <div className=" bg-black pt-12 pb-24 overflow-hidden relative"id="bracking">
       <span className=" absolute top-[52%]">
         <HalfCircle />
       </span>

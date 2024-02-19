@@ -13,39 +13,39 @@ import {
 // nav bar links
 export const navBarLink = [
   {
-    path: "#",
+    path: "#hero",
     title: "Home",
     option: [
-      { subLink: "#Practice1", subLink: "Practice1" },
-      { subLink: "#Practice2", subLink: "Practice2" },
+      { subLink: "#hero", subLink: "Practice1" },
+      { subLink: "#hero", subLink: "Practice2" },
     ],
   },
   {
     path: "#",
     title: "About Us",
     option: [
-      { subLink: "#about1", subPath: "about1" },
-      { subLink: "#about2", subPath: "about2" },
+      { subLink: "#featured", subPath: "Featured" },
+      { subLink: "#featured", subPath: "Featured2" },
     ],
   },
   {
     path: "#",
     title: "Attorneys",
     option: [
-      { subLink: "#Attorneys1", subPath: "Attorneys1" },
-      { subLink: "#Attorneys2", subPath: "Attorneys2" },
+      { subLink: "#global", subPath: "Global" },
+      { subLink: "#global", subPath: "Global2" },
     ],
   },
   {
     path: "#",
     title: "Practice Areas",
     option: [
-      { subLink: "#Practice1", subPath: "Practice1" },
-      { subLink: "#Practice2", subPath: "Practice2" },
+      { subLink: "#why_we", subPath: "Why We" },
+      { subLink: "#why_we", subPath: "Why We2" },
     ],
   },
   {
-    path: "#",
+    path: "#california",
     option: [
       { subLink: "#Practice1", subPath: "Practice1" },
       { subLink: "#Practice2", subPath: "Practice2" },
@@ -55,13 +55,13 @@ export const navBarLink = [
   {
     path: "#",
     option: [
-      { subLink: "#Practice1", subPath: "Practice1" },
-      { subLink: "#Practice2", subPath: "Practice2" },
+      { subLink: "#bracking", subPath: "Bracking" },
+      { subLink: "#bracking", subPath: "Bracking2" },
     ],
     title: "Media",
   },
   {
-    path: "#",
+    path: "#contact",
     option: [
       { subLink: "#Practice1", subPath: "Practice1" },
       { subLink: "#Practice2", subPath: "Practice2" },

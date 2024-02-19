@@ -5,7 +5,7 @@ import { HalfCircle } from "./common/Icon";
 
 const California = () => {
   return (
-    <div className=" bg-black py-[88px] relative">
+    <div className=" bg-black py-[88px] relative" id="california">
       <Image
         src="/assets/images/calfornia/circle.png"
         alt="circle"

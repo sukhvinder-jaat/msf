@@ -19,7 +19,7 @@ const Global = () => {
     autoplaySpeed: 3000,
   };
   return (
-    <div className="bg-black overflow-hidden relative pb-[107px]">
+    <div className="bg-black overflow-hidden relative pb-[107px]"id="global">
       <span className=" start-[-5px] absolute md:top-[35%] top-[15%] lg:block hidden">
         <HalfCircle />
       </span>

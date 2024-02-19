@@ -78,7 +78,7 @@ const GetUpdate = () => {
   };
 
   return (
-    <div className=" bg-white pt-36 relative">
+    <div className=" bg-white md:pt-36 pt-20 relative" id="contact">
       <span className=" absolute top-[31%] start-[-5px] xl:block hidden">
         <HalfCircle />
       </span>

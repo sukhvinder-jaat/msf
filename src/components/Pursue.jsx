@@ -5,7 +5,7 @@ import { pursueFeature } from "./common/Helper";
 
 const Pursue = () => {
   return (
-    <div className=" bg-white pt-28 pb-[116px]">
+    <div className=" bg-white md:pt-28 pb-[116px]">
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
         <div className="flex flex-wrap justify-center lg:justify-between lg:items-start items-center lg:flex-row flex-col-reverse">
           <div className="lg:w-6/12 w-full relative lg:mt-0 mt-10">
