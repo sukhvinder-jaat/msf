@@ -17,14 +17,14 @@ const Representation = () => {
               loading="lazy"
               sizes="100vw"
             />
-            <div className=" shadow-[5px_5px_20px_0px_#0000001A] py-7 px-8 max-w-[306px] md:absolute end-5 animate-bounce bottom-5 z-10 bg-white rounded">
+            <div className=" shadow-[5px_5px_20px_0px_#0000001A] py-7 px-8 max-w-[306px] sm:absolute end-5 bottom-5 z-10 sm:translate-y-0 translate-y-[-10%] sm:mb-0 mb-5 bg-white rounded">
               <p className=" text-slat font-Poppins font-medium md:text-base text-sm leading-[150%] text-center">
                 We are passionate about seeking justice for any and all
                 survivors of sexual assault and abuse.
               </p>
             </div>
           </div>
-          <div className="lg:w-6/12 w-full md:ps-5 relative lg:mt-0 mt-28">
+          <div className="lg:w-6/12 w-full md:ps-5 relative lg:mt-0 mt-32">
             <p className=" text-black font-Bahnschrift font-light md:text-4xl text-3xl leading-[normal]">
               Representation for{" "}
               <span className=" text-orange font-bold">

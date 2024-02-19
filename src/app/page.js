@@ -1,3 +1,4 @@
+"use client"
 import Attorneys from "@/components/Attorneys";
 import Blog from "@/components/Blog";
 import BrackingClass from "@/components/BrackingClass";
@@ -14,7 +15,15 @@ import Representation from "@/components/Representation";
 import WhyWe from "@/components/WhyWe";
 import YourFirm from "@/components/YourFirm";
 import BackToTop from "@/components/common/BackToTop";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 export default function Home() {
+   useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
   return (
     <div className=" overflow-hidden">
       <BackToTop />

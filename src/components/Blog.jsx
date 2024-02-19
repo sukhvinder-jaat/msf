@@ -1,7 +1,7 @@
 "use client";
 
 import Heading from "./common/Heading"; // Importing the Heading component
-import React, { useRef } from "react"; // Importing React and useRef hook
+import React, { useEffect, useRef } from "react"; // Importing React and useRef hook
 import Slider from "react-slick"; // Importing Slider component from react-slick library
 
 // Importing CSS styles for the Slider component

@@ -35,7 +35,7 @@ const BrackingClass = () => {
         <p className="font-Bahnschrift text-white font-light md:text-5xl text-3xl text-center mb-12">
           Were You <span className="text-orange font-bold">a Victim</span> of
         </p>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap md:space-y-0 space-y-3">
           {/* Mapping over breaking cases */}
           {brackingCard.map((value, index) => {
             return (

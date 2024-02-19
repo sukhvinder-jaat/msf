@@ -13,7 +13,10 @@ const CommonSelect = ({
   return (
     <>
       {/* Label for the select field */}
-      <label className="block mb-2 font-Poppins font-normal text-lg text-lightBlack33">
+      <label
+        for={id}
+        className="block mb-2 font-Poppins font-normal text-lg text-lightBlack33"
+      >
         City
       </label>
       {/* Select field */}

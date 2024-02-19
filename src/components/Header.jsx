@@ -136,7 +136,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <div
-                    className={`absolute opacity-0 group-hover:opacity-100 hidden group-hover:flex group-hover:z-10 -z-10 bg-black right-0 flex-col gap-3 top-[100%] transition-all ease-linear duration-300 px-2  ${
+                    className={`absolute hidden group-hover:opacity-100 hidden group-hover:flex group-hover:z-10 -z-10 bg-black right-0 flex-col gap-3 top-[100%] transition-all ease-linear duration-300 px-2  ${
                       hideArrow ? "hidden" : "block"
                     }`}
                   >

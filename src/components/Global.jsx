@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { globalCard } from "./common/Helper";
 import Slider from "react-slick";
 import Image from "next/image";
@@ -8,6 +8,7 @@ import { HalfCircle } from "./common/Icon";
 
 const Global = () => {
   // Slider settings
+
   const globalSlider = {
     dots: false,
     arrow: false,
@@ -17,10 +18,23 @@ const Global = () => {
     infinite: true,
     vertical: true,
     centerMode: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
   };
+  const sliderRef = useRef(null);
 
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (slider) {
+      // Add mouse wheel scrolling functionality
+      slider.innerSlider.list.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        if (e.deltaY > 0) {
+          slider.slickNext();
+        } else {
+          slider.slickPrev();
+        }
+      });
+    }
+  }, []);
   return (
     <div className="bg-black overflow-hidden relative pb-[107px]" id="global">
       {/* Half circle icon */}
@@ -67,6 +81,7 @@ const Global = () => {
             {/* Slider */}
             <Slider
               {...globalSlider}
+              ref={sliderRef}
               className="w-full lg:overflow-[unset] overflow-hidden global"
             >
               {/* Mapping through global cards */}

@@ -1,6 +1,6 @@
 "use client";
 // Importing necessary modules and components
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Heading from "./common/Heading";
 import Image from "next/image";
 import Slider from "react-slick";
@@ -8,7 +8,23 @@ import { WhyWeDot } from "./common/Icon";
 
 // WhyWe component
 const WhyWe = () => {
+  const sliderRef = useRef(null);
+
   // Slider settings
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (slider) {
+      // Add mouse wheel scrolling functionality
+      slider.innerSlider.list.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        if (e.deltaY > 0) {
+          slider.slickNext();
+        } else {
+          slider.slickPrev();
+        }
+      });
+    }
+  }, []);
   const whySlider = {
     dots: false,
     arrow: false,
@@ -17,8 +33,6 @@ const WhyWe = () => {
     slidesToScroll: 1,
     infinite: true,
     vertical: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
   };
   return (
     <div className="pt-28 relative md:pb-32 pb-20" id="why_we">
@@ -34,12 +48,12 @@ const WhyWe = () => {
       />
       {/* heading */}
       <Heading heading="WHY WE ARE " />
-      <p className="font-Bahnschrift text-black font-light md:text-5xl text-3xl text-center mt-3 md:mb-12 mb-8">
+      <p className="font-Bahnschrift text-black font-light md:text-5xl text-3xl text-center mt-3 md:mb-12">
         California <span className="text-orange font-bold">Sexual Abuse</span>{" "}
         Attorneys
       </p>
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
-        <div className="flex flex-wrap md:py-10 lg:justify-between justify-center">
+        <div className="flex flex-wrap md:py-10 lg:justify-between justify-center items-center">
           <div className="lg:w-6/12 sm:w-8/12 w-full lg:mt-0 mt-12 z-20 relative lg:mb-0 mb-5">
             <Image
               src="/assets/images/why_we/metting.webp"
@@ -58,6 +72,7 @@ const WhyWe = () => {
             {/* slider */}
             <Slider
               {...whySlider}
+              ref={sliderRef}
               className="w-full lg:overflow-[unset] overflow-hidden"
             >
               <div className="mb-0">

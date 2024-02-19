@@ -16,6 +16,7 @@ const ChooseUs = () => {
         alt="choose us"
         loading="lazy"
         sizes="100vw"
+        data-aos="zoom-out-right"
       />
       {/* Half circle icon */}
       <span className="start-[-5px] absolute md:top-[30%] top-[15%]">
@@ -34,6 +35,7 @@ const ChooseUs = () => {
             return (
               <div
                 className="xl:w-4/12 md:w-6/12 w-full p-3 relative"
+                data-aos="zoom-out-right"
                 key={index}
               >
                 <div

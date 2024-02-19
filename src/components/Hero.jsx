@@ -110,7 +110,7 @@ const Hero = () => {
                 id="videoElement"
                 onClick={videoPlayHandler}
                 controls
-                className="w-full h-full"
+                className="w-full h-full xl:max-h-[355px] max-h-[302px]"
                 poster={"/assets/images/hero/women.webp"}
               >
                 <source
