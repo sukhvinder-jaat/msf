@@ -2,10 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { FooterIcon, FooterLinks } from "./common/Helper"; // Importing footer icon and links data
 import Image from "next/image";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear(); // Get the current year
-
   return (
     <div className="bg-black pt-[268px] mt-[-200px]">
       <div className="container max-w-[1140px] mx-auto px-3">

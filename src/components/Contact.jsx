@@ -61,7 +61,7 @@ const Contact = () => {
                 </p>
                 {/* Phone numbers */}
                 <div className="flex flex-col items-center justify-center">
-                  <div>
+                  <div className="mb-0">
                     <p className="font-Poppins font-normal text-lg text-white">
                       <span className="font-semibold text-orange me-2">P</span>
                       {value.phone}

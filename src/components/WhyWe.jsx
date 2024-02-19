@@ -60,7 +60,7 @@ const WhyWe = () => {
               {...whySlider}
               className="w-full lg:overflow-[unset] overflow-hidden"
             >
-              <div>
+              <div className="mb-0">
                 <p className="font-Bahnschrift font-bold text-2xl text-black">
                   Nationally Recognized for Representing Sexual Abuse Survivors
                 </p>
@@ -93,7 +93,7 @@ const WhyWe = () => {
                   Contact our firm today if you were affected.
                 </p>
               </div>
-              <div>
+              <div className="mb-0">
                 <p className="font-Bahnschrift font-bold text-2xl text-black">
                   Nationally Recognized for Representing Sexual Abuse Survivors
                 </p>

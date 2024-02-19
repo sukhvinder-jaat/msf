@@ -16,25 +16,23 @@ import YourFirm from "@/components/YourFirm";
 import BackToTop from "@/components/common/BackToTop";
 export default function Home() {
   return (
-    <>
-      <div className=" overflow-hidden">
-        <BackToTop />
-        <Hero />
-        <Featured />
-        <ChooseUs />
-        <Global />
-        <WhyWe />
-        <BrackingClass />
-        <Representation />
-        <Pursue />
-        <California />
-        <Blog />
-        <YourFirm />
-        <Contact />
-        <GetUpdate />
-        <Attorneys />
-        <Footer />
-      </div>
-    </>
+    <div className=" overflow-hidden">
+      <BackToTop />
+      <Hero />
+      <Featured />
+      <ChooseUs />
+      <Global />
+      <WhyWe />
+      <BrackingClass />
+      <Representation />
+      <Pursue />
+      <California />
+      <Blog />
+      <YourFirm />
+      <Contact />
+      <GetUpdate />
+      <Attorneys />
+      <Footer />
+    </div>
   );
 }

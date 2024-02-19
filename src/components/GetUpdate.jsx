@@ -164,7 +164,7 @@ const GetUpdate = () => {
               />
             </div>
             {/* radio btn */}
-            <div>
+            <div className="mb-0">
               <p className=" text-black md:text-2xl text-xl font-Poppins font-medium mb-6">
                 Institution Involved <span className=" text-slat">*</span>
               </p>
@@ -191,7 +191,7 @@ const GetUpdate = () => {
                 label="Reason for inquiry"
               />
             </div>
-            <div>
+            <div className="mb-0">
               <p className=" font-bold text-orange font-Poppins md:text-2xl text-xl mb-2">
                 Disclaimer*
               </p>
