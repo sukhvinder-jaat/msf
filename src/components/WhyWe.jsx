@@ -1,11 +1,14 @@
 "use client";
+// Importing necessary modules and components
 import React from "react";
 import Heading from "./common/Heading";
 import Image from "next/image";
 import Slider from "react-slick";
 import { WhyWeDot } from "./common/Icon";
 
+// WhyWe component
 const WhyWe = () => {
+  // Slider settings
   const whySlider = {
     dots: false,
     arrow: false,
@@ -19,6 +22,7 @@ const WhyWe = () => {
   };
   return (
     <div className="pt-28 relative md:pb-32 pb-20" id="why_we">
+      {/* image */}
       <Image
         src="/assets/images/why_we/why_we.png"
         width={628}
@@ -28,7 +32,7 @@ const WhyWe = () => {
         loading="lazy"
         sizes="100vw"
       />
-
+      {/* heading */}
       <Heading heading="WHY WE ARE " />
       <p className="font-Bahnschrift text-black font-light md:text-5xl text-3xl text-center mt-3 md:mb-12 mb-8">
         California <span className="text-orange font-bold">Sexual Abuse</span>{" "}

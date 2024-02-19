@@ -1,5 +1,5 @@
+// Importing necessary modules and components
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -48,7 +48,7 @@ const Header = () => {
               >
                 <Link
                   href={link.path}
-                  className=" flex items-center gap-1 relative group hover_stroke"
+                  className="flex items-center gap-1 relative group hover_stroke"
                 >
                   {link.title}
                   <span
@@ -122,7 +122,7 @@ const Header = () => {
                 >
                   <Link
                     href={link.path}
-                    className=" flex items-center gap-1 relative group/item hover_stroke"
+                    className="flex items-center gap-1 relative group/item hover_stroke"
                   >
                     {link.title}
                     <span

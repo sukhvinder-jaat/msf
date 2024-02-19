@@ -387,8 +387,8 @@ export const ChooseIntelligence = () => {
     </svg>
   );
 };
-// facebok
-export const Fackbook = () => {
+// facebook
+export const FaceBook = () => {
   return (
     <svg
       width="29"
@@ -491,7 +491,7 @@ export const Linkedin = () => {
     </svg>
   );
 };
-// Linkedin
+// youtube
 export const YouTube = () => {
   return (
     <svg

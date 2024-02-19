@@ -2,7 +2,7 @@ import {
   ChooseExperience,
   ChooseIntelligence,
   ChooseTrust,
-  Fackbook,
+  FaceBook,
   GooglePay,
   Instagram,
   Linkedin,
@@ -243,7 +243,7 @@ export const FooterLinks = [
 export const FooterIcon = [
   {
     link: [
-      { icon: <Fackbook />, path: "https://www.facebook.com/" },
+      { icon: <FaceBook />, path: "https://www.facebook.com/" },
       { icon: <Twitter />, path: "https://twitter.com/?lang=en" },
       {
         icon: <Instagram />,

@@ -12,6 +12,7 @@ import { HalfCircle } from "./common/Icon";
 
 const GetUpdate = () => {
   const form = useRef();
+  // form data save useState
   const [formData, SetFormData] = useState({
     name: "",
     email: "",
@@ -22,23 +23,23 @@ const GetUpdate = () => {
     city: "",
     checkBox: false,
   });
-
+  // input handler
   const inputHandler = (e) => {
     const { name, value } = e.target;
     // Enforce maximum one digit at a time for phone number input
     if (name === "phone" && value.length > 10) {
       return;
     }
-
     SetFormData({ ...formData, [name]: value });
   };
-
+  // error useState
   const [error, setError] = useState(false);
-
+  // email regex
   const emailRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
+  // phone regex
   const phoneRegex = /^\d{10}$/;
+  // form handler
   const FormSubmit = (e) => {
     e.preventDefault();
     if (
@@ -53,6 +54,7 @@ const GetUpdate = () => {
       formData.city.trim() !== "country"
     ) {
       setError(false);
+      // email js
       emailjs
         .sendForm(
           "service_rhvi6ne",
@@ -98,6 +100,7 @@ const GetUpdate = () => {
         </p>
         <form ref={form} onSubmit={FormSubmit}>
           <div className="flex flex-wrap">
+            {/* first name input */}
             <div className=" w-6/12 relative pb-7 md:pe-5 pe-2">
               <CommonInput
                 type="text"
@@ -110,6 +113,7 @@ const GetUpdate = () => {
                 label="First Name"
               />
             </div>
+            {/* last name input */}
             <div className=" w-6/12 relative pb-7 md:ps-5 ps-2">
               <CommonInput
                 type="text"
@@ -122,6 +126,7 @@ const GetUpdate = () => {
                 label="Last Name"
               />
             </div>
+            {/* phoone number input */}
             <div className=" w-6/12 relative pb-7 md:pe-5 pe-2">
               <CommonInput
                 type="number"
@@ -134,6 +139,7 @@ const GetUpdate = () => {
                 label="Phone Number"
               />
             </div>
+            {/* email input */}
             <div className=" w-6/12 relative pb-7 md:ps-5 ps-2">
               <CommonInput
                 type="email"
@@ -146,6 +152,7 @@ const GetUpdate = () => {
                 label="Email"
               />
             </div>
+            {/* custom select */}
             <div className="relative w-full mb-7">
               <CommonSelect
                 value={formData.city}
@@ -156,7 +163,8 @@ const GetUpdate = () => {
                 error={error}
               />
             </div>
-            <div className="">
+            {/* radio btn */}
+            <div>
               <p className=" text-black md:text-2xl text-xl font-Poppins font-medium mb-6">
                 Institution Involved <span className=" text-slat">*</span>
               </p>
@@ -170,6 +178,7 @@ const GetUpdate = () => {
                 error={error}
               />
             </div>
+            {/* text area */}
             <div className=" w-full my-7">
               <CommonTextArea
                 type="text"
@@ -194,6 +203,7 @@ const GetUpdate = () => {
                 kept strictly confidential.
               </p>
               <div className=" flex items-center gap-5 mt-7 relative">
+                {/* DISCLAIMER checkbox */}
                 <div className=" relative">
                   <input
                     type="checkbox"
@@ -218,6 +228,7 @@ const GetUpdate = () => {
               </div>
             </div>
           </div>
+          {/* send message btn */}
           <div className="flex justify-center mt-12 mb-24">
             <BlueButton title="Send Message" />
           </div>
