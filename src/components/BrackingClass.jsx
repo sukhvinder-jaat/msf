@@ -17,7 +17,7 @@ const BrackingClass = () => {
       {/* Dots image */}
       <span className="absolute bottom-[12%] end-0">
         <Image
-          src="/assets/images/bracking/dots.png"
+          src="/assets/images/bracking/dots.webp"
           width={84}
           height={83}
           alt="dots"

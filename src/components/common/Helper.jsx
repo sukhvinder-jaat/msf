@@ -71,18 +71,18 @@ export const navBarLink = [
 ];
 // featured card
 export const featuredCard = [
-  { path: "/assets/images/featured/fox.png", width: "max-w-[92px]" },
-  { path: "/assets/images/featured/nbc.png", width: "max-w-[90px]" },
-  { path: "/assets/images/featured/minutes.png", width: "max-w-[88px]" },
-  { path: "/assets/images/featured/espn.png", width: "max-w-[144px]" },
+  { path: "/assets/images/featured/fox.webp", width: "max-w-[92px]" },
+  { path: "/assets/images/featured/nbc.webp", width: "max-w-[90px]" },
+  { path: "/assets/images/featured/minutes.webp", width: "max-w-[88px]" },
+  { path: "/assets/images/featured/espn.webp", width: "max-w-[144px]" },
 ];
 // firm card
 export const firmCard = [
-  { path: "/assets/images/firm/time.png", width: "max-w-[169px]" },
-  { path: "/assets/images/firm/new_york.png", width: "max-w-[141px]" },
-  { path: "/assets/images/firm/today.png", width: "max-w-[120px]" },
-  { path: "/assets/images/firm/minutes.png", width: "max-w-[88px]" },
-  { path: "/assets/images/firm/wall.png", width: "max-w-[136px]" },
+  { path: "/assets/images/firm/time.webp", width: "max-w-[169px]" },
+  { path: "/assets/images/firm/new_york.webp", width: "max-w-[141px]" },
+  { path: "/assets/images/firm/today.webp", width: "max-w-[120px]" },
+  { path: "/assets/images/firm/minutes.webp", width: "max-w-[88px]" },
+  { path: "/assets/images/firm/wall.webp", width: "max-w-[136px]" },
 ];
 // global card
 export const globalCard = [
@@ -129,11 +129,11 @@ export const chooseCard = [
 // choose card
 export const brackingCard = [
   {
-    path: "/assets/images/bracking/hand.png",
+    path: "/assets/images/bracking/hand.webp",
     title: "Los Angeles County Juvenile Probation Camp Sexual Assault",
   },
   {
-    path: "/assets/images/bracking/girl.png",
+    path: "/assets/images/bracking/girl.webp",
     title: "California Schools Sexual Abuse",
   },
 ];
@@ -147,17 +147,17 @@ export const pursueFeature = [
 // blogCard
 export const blogCard = [
   {
-    image: "/assets/images/blog/man.png",
+    image: "/assets/images/blog/man.webp",
     title:
       "At Manly Stewart & Finaldi, our attorneys routinely represent sexual assault victims in high-profile national cases.",
   },
   {
-    image: "/assets/images/blog/law.png",
+    image: "/assets/images/blog/law.webp",
     title:
       "Riverside Country school principle Greg Anderson arrested for allegedly failing to report abuse.",
   },
   {
-    image: "/assets/images/blog/women.png",
+    image: "/assets/images/blog/women.webp",
     title:
       "Former Anaheim elementary school teacher Richard O’ Connor sentenced to prison for possessing child pornography.",
   },

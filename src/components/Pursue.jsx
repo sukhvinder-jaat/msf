@@ -48,7 +48,7 @@ const Pursue = () => {
           {/* Image */}
           <div className="lg:w-[45%] md:w-8/12 w-full relative">
             <Image
-              src="/assets/images/pursue/law.png"
+              src="/assets/images/pursue/law.webp"
               alt="justice"
               className="w-full h-full"
               width={537}

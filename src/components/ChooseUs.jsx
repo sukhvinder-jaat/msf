@@ -10,7 +10,7 @@ const ChooseUs = () => {
       <div className="relative md:mb-32 mb-20">
         {/* Choose Us image */}
         <Image
-          src="/assets/images/choose_us/choose_us.png"
+          src="/assets/images/choose_us/choose_us.webp"
           width={628}
           height={163}
           className="max-w-[520px] max-h-[123px] absolute end-0 top-[-10%] pointer-events-none"

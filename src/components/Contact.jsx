@@ -9,7 +9,7 @@ const Contact = () => {
       {/* Dots */}
       <span className="absolute bottom-[12%] start-0">
         <Image
-          src="/assets/images/bracking/dots.png"
+          src="/assets/images/bracking/dots.webp"
           width={84}
           height={83}
           alt="dots"
@@ -18,7 +18,7 @@ const Contact = () => {
       </span>
       <span className="absolute bottom-[10%] end-0">
         <Image
-          src="/assets/images/bracking/dots.png"
+          src="/assets/images/bracking/dots.webp"
           width={84}
           height={83}
           alt="dots"

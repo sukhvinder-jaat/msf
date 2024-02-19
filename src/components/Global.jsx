@@ -30,7 +30,7 @@ const Global = () => {
 
       {/* Image */}
       <Image
-        src="/assets/images/global/white_dot.png"
+        src="/assets/images/global/white_dot.webp"
         width={80}
         height={84}
         alt="line"
@@ -46,7 +46,7 @@ const Global = () => {
           <div className="lg:w-6/12 px-3 relative">
             {/* Images */}
             <Image
-              src="/assets/images/global/liner.png"
+              src="/assets/images/global/liner.webp"
               width={612}
               height={143}
               className="w-full absolute top-0 z-10 h-[173px] translate-y-[-30%]"
@@ -55,7 +55,7 @@ const Global = () => {
               sizes="100vw"
             />
             <Image
-              src="/assets/images/global/liner.png"
+              src="/assets/images/global/liner.webp"
               width={612}
               height={143}
               className="w-full absolute bottom-[12%] z-10 h-[273px] translate-y-[30%] rotate-180"
@@ -100,7 +100,7 @@ const Global = () => {
           <div className="lg:w-5/12 sm:w-8/12 lg:mt-0 mt-12 relative z-20">
             {/* Image */}
             <Image
-              src="/assets/images/global/o_women.png"
+              src="/assets/images/global/o_women.webp"
               width={477}
               height={460}
               className="w-full animate-pulse lg:max-w-[477px] max-w-[400px]"

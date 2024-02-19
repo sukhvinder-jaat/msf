@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        attorneys: "url('/assets/images/background/refer.png')",
-        hero: "url('/assets/images/background/hero.png')",
+        attorneys: "url('/assets/images/background/refer.webp')",
+        hero: "url('/assets/images/background/hero.webp')",
       },
       fontFamily: {
         Bahnschrift: ["Bahnschrift", "sans-serif"],

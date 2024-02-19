@@ -51,7 +51,7 @@ const Blog = () => {
     <div className="bg-white pt-20 pb-0 overflow-hidden relative">
       {/* Image */}
       <Image
-        src="/assets/images/blog/our_blog.png"
+        src="/assets/images/blog/our_blog.webp"
         width={628}
         height={113}
         className="max-w-[450px] max-h-[113px] absolute start-0 top-[5%] pointer-events-none"

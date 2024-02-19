@@ -9,7 +9,7 @@ const Attorneys = () => {
           {/* Positioned image at the top left corner */}
           <span className="absolute top-[12%] start-0 lg:block hidden">
             <Image
-              src="/assets/images/refer/white_circle.png"
+              src="/assets/images/refer/white_circle.webp"
               width={84}
               height={83}
               alt="circle"
@@ -19,7 +19,7 @@ const Attorneys = () => {
           {/* Positioned image at the bottom right corner */}
           <span className="absolute bottom-[12%] end-0">
             <Image
-              src="/assets/images/refer/small_circle.png"
+              src="/assets/images/refer/small_circle.webp"
               width={52}
               height={52}
               alt="circle"

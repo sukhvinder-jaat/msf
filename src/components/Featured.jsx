@@ -9,7 +9,7 @@ const Featured = () => {
     <div className="bg-white pt-20 pb-[136px] relative" id="featured">
       {/* Line */}
       <Image
-        src="/assets/images/hero/white_dot.png"
+        src="/assets/images/hero/white_dot.webp"
         width={30}
         height={84}
         alt="line"

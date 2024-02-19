@@ -24,7 +24,7 @@ const WhyWe = () => {
     <div className="pt-28 relative md:pb-32 pb-20" id="why_we">
       {/* image */}
       <Image
-        src="/assets/images/why_we/why_we.png"
+        src="/assets/images/why_we/why_we.webp"
         width={628}
         height={113}
         className="max-w-[450px] max-h-[113px] absolute end-0 top-[5%] pointer-events-none"
@@ -42,7 +42,7 @@ const WhyWe = () => {
         <div className="flex flex-wrap md:py-10 lg:justify-between justify-center">
           <div className="lg:w-6/12 sm:w-8/12 w-full lg:mt-0 mt-12 z-20 relative lg:mb-0 mb-5">
             <Image
-              src="/assets/images/why_we/metting.png"
+              src="/assets/images/why_we/metting.webp"
               width={490}
               height={460}
               className="w-full lg:max-w-[540px]"

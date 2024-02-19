@@ -33,7 +33,7 @@ const Hero = () => {
         <Header />
         {/* White dot image */}
         <Image
-          src="/assets/images/hero/white_dot.png"
+          src="/assets/images/hero/white_dot.webp"
           width={30}
           height={84}
           alt="line"
@@ -43,7 +43,7 @@ const Hero = () => {
         />
         {/* Semi-circle image */}
         <Image
-          src="/assets/images/hero/semi_circle.png"
+          src="/assets/images/hero/semi_circle.webp"
           width={84}
           height={84}
           alt="line"
@@ -60,7 +60,7 @@ const Hero = () => {
             </p>
             {/* Line image */}
             <Image
-              src="/assets/images/hero/line.svg"
+              src="/assets/images/hero/line.webp"
               width={385}
               height={121}
               alt="line"
@@ -100,7 +100,7 @@ const Hero = () => {
             <div className="lg:w-7/12 w-full relative xl:max-w-[707px] max-w-[700px]">
               {/* Dots image */}
               <Image
-                src="/assets/images/hero/dots.png"
+                src="/assets/images/hero/dots.webp"
                 width={84}
                 height={84}
                 alt="line"
@@ -115,7 +115,7 @@ const Hero = () => {
                   onClick={videoPlayHandler}
                   controls
                   className="w-full h-full"
-                  poster={"/assets/images/hero/women.png"}
+                  poster={"/assets/images/hero/women.webp"}
                 >
                   <source
                     src={"/assets/video/sample_video.mp4"}
@@ -133,7 +133,7 @@ const Hero = () => {
                     />
                     {/* Image */}
                     <Image
-                      src="/assets/images/hero/women.png"
+                      src="/assets/images/hero/women.webp"
                       width={707}
                       height={378}
                       alt="line"

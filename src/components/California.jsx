@@ -8,7 +8,7 @@ const California = () => {
     <div className="bg-black py-[88px] relative" id="california">
       {/* Circle image */}
       <Image
-        src="/assets/images/calfornia/circle.png"
+        src="/assets/images/calfornia/circle.webp"
         alt="circle"
         className="w-full max-w-[147px] absolute top-[10%] start-[1%] md:block hidden"
         width={147}
