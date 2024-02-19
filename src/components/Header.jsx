@@ -44,7 +44,7 @@ const Header = () => {
             return (
               <li
                 key={index}
-                className="text-white font-Poppins font-semibold text-base leading-[150%]"
+                className="text-white font-Poppins font-semibold text-base leading-[150%] group relative"
               >
                 <Link
                   href={link.path}
@@ -60,24 +60,24 @@ const Header = () => {
                   >
                     <DownArrow />
                   </span>
-                  <span
-                    className={`absolute opacity-0 group-hover:opacity-100 group-hover:z-10 -z-10 w-full flex flex-col gap-3 top-[100%] transition-all ease-linear duration-300 ${
-                      hideArrow ? "hidden" : "block"
-                    }`}
-                  >
-                    {link.option.map((options, subIndex) => {
-                      return (
-                        <Link
-                          className="hover:text-orange"
-                          key={subIndex}
-                          href={options.subLink}
-                        >
-                          {options.subPath}
-                        </Link>
-                      );
-                    })}
-                  </span>
                 </Link>
+                <div
+                  className={`absolute opacity-0 group-hover:opacity-100 group-hover:z-10 -z-10 w-full flex flex-col gap-3 top-[100%] transition-all ease-linear duration-300 ${
+                    hideArrow ? "hidden" : "block"
+                  }`}
+                >
+                  {link.option.map((options, subIndex) => {
+                    return (
+                      <Link
+                        className="hover:text-orange"
+                        key={subIndex}
+                        href={options.subLink}
+                      >
+                        {options.subPath}
+                      </Link>
+                    );
+                  })}
+                </div>
               </li>
             );
           })}
@@ -118,11 +118,11 @@ const Header = () => {
               return (
                 <li
                   key={index}
-                  className="text-white font-Poppins font-semibold text-base leading-[150%]"
+                  className="text-white font-Poppins font-semibold text-base leading-[150%] relative group"
                 >
                   <Link
                     href={link.path}
-                    className="flex items-center gap-1 relative group/item hover_stroke"
+                    className="flex items-center gap-1 relative hover_stroke"
                   >
                     {link.title}
                     <span
@@ -134,25 +134,25 @@ const Header = () => {
                     >
                       <DownArrow />
                     </span>
-                    <div
-                      className={`absolute opacity-0 group-hover/item:opacity-100 hidden group-hover/item:flex group-hover/item:z-10 -z-10 bg-black right-0 flex-col gap-3 top-[100%] transition-all ease-linear duration-300 px-2  ${
-                        hideArrow ? "hidden" : "block"
-                      }`}
-                    >
-                      {link.option.map((options, subIndex) => {
-                        return (
-                          <Link
-                            className="hover:text-orange"
-                            key={subIndex}
-                            href={options.subLink}
-                            onClick={sidebarHandler}
-                          >
-                            {options.subPath}
-                          </Link>
-                        );
-                      })}
-                    </div>
                   </Link>
+                  <div
+                    className={`absolute opacity-0 group-hover:opacity-100 hidden group-hover:flex group-hover:z-10 -z-10 bg-black right-0 flex-col gap-3 top-[100%] transition-all ease-linear duration-300 px-2  ${
+                      hideArrow ? "hidden" : "block"
+                    }`}
+                  >
+                    {link.option.map((options, subIndex) => {
+                      return (
+                        <Link
+                          className="hover:text-orange"
+                          key={subIndex}
+                          href={options.subLink}
+                          onClick={sidebarHandler}
+                        >
+                          {options.subPath}
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </li>
               );
             })}

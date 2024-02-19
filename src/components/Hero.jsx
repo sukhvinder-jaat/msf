@@ -60,7 +60,7 @@ const Hero = () => {
             </p>
             {/* Line image */}
             <Image
-              src="/assets/images/hero/line.webp"
+              src="/assets/images/hero/line.svg"
               width={385}
               height={121}
               alt="line"
