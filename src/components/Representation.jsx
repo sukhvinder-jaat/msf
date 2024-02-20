@@ -4,7 +4,7 @@ import { OrangeTick } from "./common/Icon";
 
 const Representation = () => {
   return (
-    <div className=" bg-white pt-28 pb-[108px]">
+    <div className=" bg-white pt-28 lg:pb-[108px]">
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
         <div className="flex flex-wrap justify-center">
           <div

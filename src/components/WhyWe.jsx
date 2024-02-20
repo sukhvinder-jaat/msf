@@ -38,7 +38,7 @@ const WhyWe = () => {
     },
   };
   return (
-    <div className="pt-28 relative lg:pb-32 md:pb-20 pb-12" id="why_we">
+    <div className="pt-28 relative lg:pb-32 pb-12" id="why_we">
       {/* image */}
       <Image
         src="/assets/images/why_we/why_we.webp"
@@ -53,7 +53,7 @@ const WhyWe = () => {
       />
       {/* heading */}
       <Heading heading="WHY WE ARE " />
-      <p className="font-Bahnschrift text-black font-light md:text-5xl text-3xl text-center mt-3 md:mb-12">
+      <p className="font-Bahnschrift text-black font-light md:text-5xl text-3xl text-center mt-3 lg:mb-12">
         California <span className="text-orange font-bold">Sexual Abuse</span>{" "}
         Attorneys
       </p>

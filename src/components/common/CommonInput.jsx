@@ -15,7 +15,10 @@ const CommonInput = ({
   return (
     <div className="mb-0">
       {/* Label for the input field */}
-      <label className="block mb-2 font-Poppins font-normal md:text-lg text-base text-lightBlack33">
+      <label
+        htmlFor={id}
+        className="block mb-2 font-Poppins font-normal md:text-lg text-base text-lightBlack33"
+      >
         {label}
       </label>
       <div className=" relative">

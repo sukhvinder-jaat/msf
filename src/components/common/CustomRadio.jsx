@@ -9,6 +9,7 @@ const CustomRadio = ({ options, selectedValue, onChange, name, error }) => {
       {options.map((option, index) => (
         <label
           key={index}
+          htmlFor={name}
           className="font-Poppins lg:my-0 my-1 md:text-lg sm:text-base text-sm font-semibold flex gap-3 sm:w-6/12 w-full items-center"
         >
           <input

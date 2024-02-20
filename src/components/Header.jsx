@@ -100,7 +100,7 @@ const Header = () => {
         <div className="p-4 flex flex-col justify-center items-center h-full relative z-50">
           {/* Close button for sidebar */}
           <button
-            className="text-orange text-3xl absolute top-5 end-5"
+            className="text-orange text-3xl absolute top-6 end-4"
             onClick={sidebarHandler}
             aria-label="sidebar handler"
           >
@@ -136,7 +136,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <div
-                    className={`absolute hidden group-hover:opacity-100 hidden group-hover:flex group-hover:z-10 -z-10 bg-black right-0 flex-col gap-3 top-[100%] transition-all ease-linear duration-[0.3s] px-2  ${
+                    className={`absolute hidden group-hover:opacity-100  group-hover:flex group-hover:z-10 -z-10 bg-black right-0 flex-col gap-3 top-[100%] transition-all ease-linear duration-[0.3s] px-2  ${
                       hideArrow ? "hidden" : "block"
                     }`}
                   >
