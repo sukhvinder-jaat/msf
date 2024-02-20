@@ -9,6 +9,7 @@ const Featured = () => {
     <div className="bg-white pt-20 pb-[136px] relative" id="featured">
       {/* Line */}
       <Image
+        decoding="async"
         src="/assets/images/hero/white_dot.webp"
         width={30}
         height={84}
@@ -36,6 +37,7 @@ const Featured = () => {
               >
                 {/* Logo image */}
                 <Image
+                  decoding="async"
                   className={`${value.width}`}
                   src={value.path}
                   width={141}

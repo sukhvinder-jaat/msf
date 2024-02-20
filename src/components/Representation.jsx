@@ -4,7 +4,7 @@ import { OrangeTick } from "./common/Icon";
 
 const Representation = () => {
   return (
-    <div className=" bg-white pt-28 lg:pb-[108px]">
+    <div className=" bg-white pt-28 lg:pb-[108px] pb-20">
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
         <div className="flex flex-wrap justify-center">
           <div
@@ -13,6 +13,7 @@ const Representation = () => {
             data-aos="zoom-out-right"
           >
             <Image
+              decoding="async"
               src="/assets/images/represention/justice.webp"
               alt="justic"
               className="w-full h-full sm:max-h-[1000px] max-h-[460px]"

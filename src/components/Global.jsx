@@ -55,6 +55,7 @@ const Global = () => {
 
       {/* Image */}
       <Image
+        decoding="async"
         src="/assets/images/global/white_dot.webp"
         width={80}
         height={84}
@@ -71,6 +72,7 @@ const Global = () => {
           <div className="lg:w-6/12 px-3 relative">
             {/* Images */}
             <Image
+              decoding="async"
               src="/assets/images/global/liner.webp"
               width={612}
               height={143}
@@ -80,6 +82,7 @@ const Global = () => {
               sizes="100vw"
             />
             <Image
+              decoding="async"
               src="/assets/images/global/liner.webp"
               width={612}
               height={143}
@@ -126,6 +129,7 @@ const Global = () => {
           <div className="lg:w-5/12 sm:w-8/12 lg:mt-0 mt-12 relative z-20">
             {/* Image */}
             <Image
+              decoding="async"
               src="/assets/images/global/o_women.webp"
               width={477}
               height={460}

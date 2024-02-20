@@ -30,6 +30,7 @@ const Hero = () => {
       <Header />
       {/* White dot image */}
       <Image
+        decoding="async"
         src="/assets/images/hero/white_dot.webp"
         width={30}
         height={84}
@@ -40,6 +41,7 @@ const Hero = () => {
       />
       {/* Semi-circle image */}
       <Image
+        decoding="async"
         src="/assets/images/hero/semi_circle.webp"
         width={84}
         height={84}
@@ -57,6 +59,7 @@ const Hero = () => {
           </p>
           {/* Line image */}
           <Image
+            decoding="async"
             src="/assets/images/hero/line.svg"
             width={385}
             height={121}
@@ -82,6 +85,7 @@ const Hero = () => {
             </p>
             {/* Line image */}
             <Image
+              decoding="async"
               src="/assets/images/hero/arrow_line.svg"
               width={193}
               height={1}
@@ -96,6 +100,7 @@ const Hero = () => {
           <div className="lg:w-7/12 w-full relative xl:max-w-[707px] max-w-[700px]">
             {/* Dots image */}
             <Image
+              decoding="async"
               src="/assets/images/hero/dots.webp"
               width={84}
               height={84}
@@ -129,6 +134,7 @@ const Hero = () => {
                   />
                   {/* Image */}
                   <Image
+                    decoding="async"
                     src="/assets/images/hero/women.webp"
                     width={707}
                     height={378}

@@ -9,6 +9,7 @@ const ChooseUs = () => {
     <div className="relative md:mb-32 mb-20">
       {/* Choose Us image */}
       <Image
+        decoding="async"
         src="/assets/images/choose_us/choose_us.webp"
         width={628}
         height={163}

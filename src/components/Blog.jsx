@@ -51,6 +51,7 @@ const Blog = () => {
     <div className="bg-white pt-20 pb-0 overflow-hidden relative">
       {/* Image */}
       <Image
+        decoding="async"
         src="/assets/images/blog/our_blog.webp"
         width={628}
         height={113}
@@ -88,6 +89,7 @@ const Blog = () => {
                         className={`w-full h-full rounded border border-darkWhite flex items-start flex-col justify-center p-[10px] transition-all ease-linear duration-[0.3s]`}
                       >
                         <Image
+                          decoding="async"
                           src={value.image}
                           alt="image"
                           className="w-full"

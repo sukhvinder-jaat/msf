@@ -8,6 +8,7 @@ const Footer = () => {
     <div className="bg-black pt-[268px] mt-[-200px] relative">
       <span className="absolute bottom-5 end-0 md:block hidden">
         <Image
+          decoding="async"
           src="/assets/images/bracking/dots.webp"
           width={84}
           height={83}
@@ -15,9 +16,10 @@ const Footer = () => {
           className="max-w-[54px] max-h-[84px]"
         />
       </span>
-      <span className="absolute bottom-5 start-0 md:block hidden">
+      <span className="absolute bottom-[6%] start-0 md:block hidden z-10">
         <Image
-          src="/assets/images/footer/circle.png"
+          decoding="async"
+          src="/assets/images/footer/circle.webp"
           width={53}
           height={53}
           alt="circle"
@@ -31,6 +33,7 @@ const Footer = () => {
             {/* Logo */}
             <Link href="#">
               <Image
+                decoding="async"
                 src="/assets/images/logo/nav.svg"
                 width={136}
                 height={56}

@@ -11,6 +11,7 @@ const YourFirm = () => {
       {/* Dots image */}
       <span className=" absolute top-[12%] end-0">
         <Image
+          decoding="async"
           src="/assets/images/bracking/dots.webp"
           width={84}
           height={83}
@@ -37,6 +38,7 @@ const YourFirm = () => {
               {/* Individual card */}
               <div className=" bg-white hover:shadow-[0px_11px_24px_0px_#0000001A] transition-all ease-in-out duration-[0.3s] w-full min-h-[120px] flex items-center justify-center px-3 py-4 h-full max-w-[210px] max-h-[120px]">
                 <Image
+                  decoding="async"
                   className={`${value.width}`}
                   src={value.path}
                   width={141}

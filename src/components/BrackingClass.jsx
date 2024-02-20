@@ -17,6 +17,7 @@ const BrackingClass = () => {
       {/* Dots image */}
       <span className="absolute bottom-[12%] end-0">
         <Image
+          decoding="async"
           src="/assets/images/bracking/dots.webp"
           width={84}
           height={83}
@@ -47,6 +48,7 @@ const BrackingClass = () => {
               >
                 {/* Image */}
                 <Image
+                  decoding="async"
                   src={value.path}
                   alt="hand"
                   className="w-full"

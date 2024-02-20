@@ -8,6 +8,19 @@ const California = () => {
     <div className="bg-black py-[88px] relative" id="california">
       {/* Circle image */}
       <Image
+        decoding="async"
+        src="/assets/images/calfornia/big_text.png"
+        width={628}
+        height={113}
+        className="md:max-w-[430px] max-w-[200px] max-h-[103px] absolute end-0 top-[12px] pointer-events-none"
+        alt="choose us"
+        loading="lazy"
+        sizes="100vw"
+        data-aos-offset="-1000"
+        data-aos="zoom-out-right"
+      />
+      <Image
+        decoding="async"
         src="/assets/images/calfornia/circle.webp"
         alt="circle"
         className="w-full max-w-[147px] absolute top-[10%] start-[1%] md:block hidden"

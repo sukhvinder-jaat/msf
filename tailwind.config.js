@@ -10,7 +10,7 @@ module.exports = {
       backgroundImage: {
         attorneys: "url('/assets/images/background/refer.webp')",
         hero: "url('/assets/images/background/hero.webp')",
-        contact: "url('/assets/images/background/contact.png')",
+        contact: "url('/assets/images/background/contact.webp')",
       },
       fontFamily: {
         Bahnschrift: ["Bahnschrift", "sans-serif"],
