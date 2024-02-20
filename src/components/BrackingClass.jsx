@@ -39,7 +39,12 @@ const BrackingClass = () => {
           {/* Mapping over breaking cases */}
           {brackingCard.map((value, index) => {
             return (
-              <div className="md:w-6/12 w-full px-3 relative" key={index}>
+              <div
+                className="md:w-6/12 w-full px-3 relative"
+                data-aos-offset="-1000"
+                data-aos="zoom-out-right"
+                key={index}
+              >
                 {/* Image */}
                 <Image
                   src={value.path}
@@ -62,7 +67,7 @@ const BrackingClass = () => {
                   {/* Conditional rendering of button based on index */}
                   {index === 0 ? (
                     <button
-                      className="bg-slat p-3 rounded-full hover:bg-orange transition-all ease-linear duration-300"
+                      className="bg-slat p-3 rounded-full hover:bg-orange transition-all ease-linear duration-[0.3s]"
                       aria-label="button"
                     >
                       <RotateArrow />

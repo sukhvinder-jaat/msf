@@ -6,7 +6,11 @@ import { HalfArrow } from "./Icon"; // Importing the HalfArrow component from th
 // - heading: the text content of the heading
 const Heading = ({ heading }) => {
   return (
-    <div className="flex items-center justify-center">
+    <div
+      className="flex items-center justify-center"
+      data-aos-offset="-1000"
+      data-aos="zoom-out-down"
+    >
       {/* Render the HalfArrow component */}
       <HalfArrow />
       {/* Render the heading text */}

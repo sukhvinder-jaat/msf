@@ -32,7 +32,7 @@ const CommonInput = ({
         {/* Display error message if error is true and value is empty */}
         {error && value === "" && (
           <p className="text-red-900 text-[12px] font-Bahnschrift font-normal flex items-start mt-1 absolute">
-            This field is required
+            {label} is required
           </p>
         )}
       </div>

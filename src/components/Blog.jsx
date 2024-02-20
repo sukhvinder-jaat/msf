@@ -54,7 +54,7 @@ const Blog = () => {
         src="/assets/images/blog/our_blog.webp"
         width={628}
         height={113}
-        className="max-w-[450px] max-h-[113px] absolute start-0 top-[5%] pointer-events-none"
+        className="md:max-w-[450px] max-w-[200px] max-h-[113px] absolute start-0 top-[5%] pointer-events-none"
         alt="choose us"
         loading="lazy"
         sizes="100vw"
@@ -62,11 +62,19 @@ const Blog = () => {
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
         {/* Heading */}
         <Heading heading="OUR BLOGS" />
-        <p className="font-Bahnschrift font-light md:text-5xl sm:text-4xl text-3xl text-black text-center mt-3 leading-[normal]">
+        <p
+          className="font-Bahnschrift font-light md:text-5xl sm:text-4xl text-3xl text-black text-center mt-3 leading-[normal]"
+          data-aos-offset="-1000"
+          data-aos="zoom-out-down"
+        >
           In the Spotlight:{" "}
           <span className="text-orange font-bold">Featured</span> Stories
         </p>
-        <div className="relative">
+        <div
+          className="relative"
+          data-aos-offset="-1000"
+          data-aos="zoom-out-down"
+        >
           <div className="overflow-hidden pt-[67px]">
             {/* Slider component */}
             <Slider {...blogSlider} ref={sliderRef} className="blog">
@@ -77,7 +85,7 @@ const Blog = () => {
                     <div className="p-3 relative">
                       {/* Blog post */}
                       <div
-                        className={`w-full h-full rounded border border-darkWhite flex items-start flex-col justify-center p-[10px] transition-all ease-linear duration-300`}
+                        className={`w-full h-full rounded border border-darkWhite flex items-start flex-col justify-center p-[10px] transition-all ease-linear duration-[0.3s]`}
                       >
                         <Image
                           src={value.image}
@@ -112,7 +120,7 @@ const Blog = () => {
                           Read More <TopArrow />
                         </p>
                         {/* Animated bar */}
-                        <div className="absolute bottom-0 w-[229px] h-[10px] start-[50%] bg-transparent translate-x-[-50%]  transition-all ease-linear duration-300"></div>
+                        <div className="absolute bottom-0 w-[229px] h-[10px] start-[50%] bg-transparent translate-x-[-50%]  transition-all ease-linear duration-[0.3s]"></div>
                       </div>
                     </div>
                   </div>

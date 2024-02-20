@@ -3,7 +3,7 @@ import React from "react";
 
 const Attorneys = () => {
   return (
-    <div className="mt-16 relative z-0">
+    <div className="mt-16 relative z-10">
       <div className="container xl:max-w-[1140px] mx-auto px-3">
         <div className="bg-attorneys bg-cover bg-no-repeat py-11 rounded flex flex-col justify-center items-center px-4 relative">
           {/* Positioned image at the top left corner */}
@@ -39,7 +39,7 @@ const Attorneys = () => {
             evaluation of your potential or pending case.
           </p>
           {/* Button */}
-          <button className="font-Poppins font-medium text-lg border border-transparent bg-white py-[18px] md:px-9 px-4 text-black rounded-[500px] mt-[42px] hover:bg-main hover:border hover:border-white hover:text-white hover:bg-slat transition-all ease-in-out duration-300 relative z-10">
+          <button className="font-Poppins font-medium text-lg border border-transparent bg-white py-[18px] md:px-9 px-4 text-black rounded-[500px] mt-[42px] hover:bg-main hover:border hover:border-white hover:text-white hover:bg-slat transition-all ease-in-out duration-[0.3s] relative z-10">
             Join Our Team Today
           </button>
         </div>

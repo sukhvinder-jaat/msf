@@ -5,7 +5,25 @@ import Image from "next/image";
 const Footer = () => {
   const currentYear = new Date().getFullYear(); // Get the current year
   return (
-    <div className="bg-black pt-[268px] mt-[-200px]">
+    <div className="bg-black pt-[268px] mt-[-200px] relative">
+      <span className="absolute bottom-5 end-0 md:block hidden">
+        <Image
+          src="/assets/images/bracking/dots.webp"
+          width={84}
+          height={83}
+          alt="dots"
+          className="max-w-[54px] max-h-[84px]"
+        />
+      </span>
+      <span className="absolute bottom-5 start-0 md:block hidden">
+        <Image
+          src="/assets/images/footer/circle.png"
+          width={53}
+          height={53}
+          alt="circle"
+          className="max-w-[28px] max-h-[53px]"
+        />
+      </span>
       <div className="container max-w-[1140px] mx-auto px-3">
         <div className="flex flex-wrap justify-between">
           {/* Left column */}

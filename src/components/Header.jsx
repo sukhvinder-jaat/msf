@@ -55,14 +55,14 @@ const Header = () => {
                     className={`${
                       hideArrow
                         ? "hidden"
-                        : "block group-hover:rotate-180 transition-all ease-linear duration-300"
+                        : "block group-hover:rotate-180 transition-all ease-linear duration-[0.3s]"
                     }`}
                   >
                     <DownArrow />
                   </span>
                 </Link>
                 <div
-                  className={`absolute opacity-0 group-hover:opacity-100 group-hover:z-10 -z-10 w-full flex flex-col gap-3 top-[100%] transition-all ease-linear duration-300 ${
+                  className={`absolute opacity-0 group-hover:opacity-100 group-hover:z-10 -z-10 w-full flex flex-col gap-3 top-[100%] transition-all ease-linear duration-[0.3s] ${
                     hideArrow ? "hidden" : "block"
                   }`}
                 >
@@ -95,7 +95,7 @@ const Header = () => {
       <div
         className={`lg:hidden fixed inset-y-0 left-0 w-full bg-black z-50 transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } transition duration-300 ease-in-out`}
+        } transition duration-[0.3s] ease-in-out`}
       >
         <div className="p-4 flex flex-col justify-center items-center h-full relative z-50">
           {/* Close button for sidebar */}
@@ -129,14 +129,14 @@ const Header = () => {
                       className={`${
                         hideArrow
                           ? "hidden"
-                          : "block group-hover:rotate-180 transition-all ease-linear duration-300"
+                          : "block group-hover:rotate-180 transition-all ease-linear duration-[0.3s]"
                       }`}
                     >
                       <DownArrow />
                     </span>
                   </Link>
                   <div
-                    className={`absolute hidden group-hover:opacity-100 hidden group-hover:flex group-hover:z-10 -z-10 bg-black right-0 flex-col gap-3 top-[100%] transition-all ease-linear duration-300 px-2  ${
+                    className={`absolute hidden group-hover:opacity-100 hidden group-hover:flex group-hover:z-10 -z-10 bg-black right-0 flex-col gap-3 top-[100%] transition-all ease-linear duration-[0.3s] px-2  ${
                       hideArrow ? "hidden" : "block"
                     }`}
                   >

@@ -20,7 +20,7 @@ const CommonTextArea = ({
       <div className=" relative">
         {/* Textarea field */}
         <textarea
-          className="outline-none text-whiteDustC placeholder:text-whiteDustC border border-whiteDustC px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full min-h-[135px]"
+          className="outline-none text-whiteDustAD placeholder:text-whiteDustAD border border-whiteDustAD px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full min-h-[135px]"
           type={type}
           placeholder={placeholder}
           value={value}
@@ -31,7 +31,7 @@ const CommonTextArea = ({
         {/* Display error message if error is true and value is empty */}
         {error && value === "" && (
           <p className="text-red-900 text-[12px] font-Bahnschrift font-normal flex items-start mt-1 absolute">
-            This field is required
+            {label} is required
           </p>
         )}
       </div>

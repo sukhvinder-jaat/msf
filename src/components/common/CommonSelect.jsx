@@ -14,7 +14,7 @@ const CommonSelect = ({
     <>
       {/* Label for the select field */}
       <label
-        for={id}
+        htmlFor={id}
         className="block mb-2 font-Poppins font-normal text-lg text-lightBlack33"
       >
         City
@@ -25,11 +25,15 @@ const CommonSelect = ({
         onChange={onChange}
         id={id}
         name={name}
-        className="block outline-none text-whiteDustC placeholder:text-whiteDustC border border-whiteDustC px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full focus:shadow-outline"
+        className="block outline-none text-whiteDustC placeholder:text-whiteDustC border border-whiteDustC px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full focus:shadow-outline uppercase"
       >
         {/* Mapping over options and creating select options */}
         {map.map((option, index) => (
-          <option className=" w-full" key={index} value={option.value}>
+          <option
+            className=" w-full uppercase"
+            key={index}
+            value={option.value}
+          >
             {option.label}
           </option>
         ))}

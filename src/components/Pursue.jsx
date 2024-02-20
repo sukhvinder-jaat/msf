@@ -11,7 +11,11 @@ const Pursue = () => {
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
         <div className="flex flex-wrap justify-center lg:justify-between lg:items-start items-center lg:flex-row flex-col-reverse">
           {/* Text content */}
-          <div className="lg:w-6/12 w-full relative lg:mt-0 mt-10">
+          <div
+            className="lg:w-6/12 w-full relative lg:mt-0 mt-10"
+            data-aos-offset="-1000"
+            data-aos="zoom-out-right"
+          >
             {/* Main title */}
             <p className="text-black font-Bahnschrift font-light md:text-4xl text-3xl leading-[normal]">
               We Pursue{" "}
@@ -55,6 +59,8 @@ const Pursue = () => {
               height={537}
               loading="lazy"
               sizes="100vw"
+              data-aos-offset="-1000"
+              data-aos="zoom-out-left"
             />
           </div>
         </div>

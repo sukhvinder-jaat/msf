@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Attorneys from "@/components/Attorneys";
 import Blog from "@/components/Blog";
 import BrackingClass from "@/components/BrackingClass";
@@ -19,13 +19,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 export default function Home() {
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({
       once: true,
     });
   }, []);
   return (
-    <div className=" overflow-hidden">
+    <div className="overflow-hidden">
       <BackToTop />
       <Hero />
       <Featured />

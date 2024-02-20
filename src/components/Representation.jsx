@@ -7,11 +7,15 @@ const Representation = () => {
     <div className=" bg-white pt-28 pb-[108px]">
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
         <div className="flex flex-wrap justify-center">
-          <div className="lg:w-6/12 md:w-8/12 w-full md:pe-5 relative">
+          <div
+            className="lg:w-6/12 md:w-8/12 w-full md:pe-5 relative"
+            data-aos-offset="-1000"
+            data-aos="zoom-out-right"
+          >
             <Image
               src="/assets/images/represention/justice.webp"
               alt="justic"
-              className="w-full h-full"
+              className="w-full h-full sm:max-h-[1000px] max-h-[460px]"
               width={537}
               height={537}
               loading="lazy"
@@ -24,7 +28,11 @@ const Representation = () => {
               </p>
             </div>
           </div>
-          <div className="lg:w-6/12 w-full md:ps-5 relative lg:mt-0 mt-32">
+          <div
+            className="lg:w-6/12 w-full md:ps-5 relative lg:mt-0 sm:mt-12 mt-20"
+            data-aos-offset="-1000"
+            data-aos="zoom-out-left"
+          >
             <p className=" text-black font-Bahnschrift font-light md:text-4xl text-3xl leading-[normal]">
               Representation for{" "}
               <span className=" text-orange font-bold">

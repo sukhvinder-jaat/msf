@@ -9,11 +9,11 @@ const CustomRadio = ({ options, selectedValue, onChange, name, error }) => {
       {options.map((option, index) => (
         <label
           key={index}
-          className="font-Poppins md:text-lg sm:text-base text-sm font-semibold flex gap-3 w-6/12 items-start"
+          className="font-Poppins lg:my-0 my-1 md:text-lg sm:text-base text-sm font-semibold flex gap-3 sm:w-6/12 w-full items-center"
         >
           <input
             type="radio"
-            className="assent_orange mt-[2px]"
+            className="assent_orange"
             name={name}
             value={option.value}
             checked={selectedValue === option.value}
@@ -25,7 +25,7 @@ const CustomRadio = ({ options, selectedValue, onChange, name, error }) => {
       {/* Display error message if error is true and no radio button is selected */}
       {error && selectedValue === "" && (
         <p className="text-red-900 text-[12px] font-Bahnschrift font-normal flex items-start mt-1 absolute bottom-[-15px]">
-          This field is required
+          Involve is required
         </p>
       )}
     </div>

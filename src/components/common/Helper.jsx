@@ -69,6 +69,35 @@ export const navBarLink = [
     title: "Contact",
   },
 ];
+// footer icon
+export const FooterLinks = [
+  {
+    title: "Links",
+    link: [
+      { links: "Home", path: "#bracking" },
+      { links: "About", path: "#why_we" },
+      { links: "Attorneys", path: "#global" },
+      { links: "Practice Areas", path: "#featured" },
+      { links: "Results", path: "#featured" },
+      { links: "Media", path: "#global" },
+    ],
+  },
+  {
+    title: "Company",
+    link: [
+      { links: "Contact Us", path: "#bracking" },
+      { links: "Locations", path: "#why_we" },
+      { links: "Our Mission", path: "#featured" },
+    ],
+  },
+  {
+    title: "Services",
+    link: [
+      { links: "Privacy Policy", path: "#" },
+      { links: "Terms of Services", path: "#" },
+    ],
+  },
+];
 // featured card
 export const featuredCard = [
   { path: "/assets/images/featured/fox.webp", width: "max-w-[92px]" },
@@ -211,35 +240,7 @@ export const radioInput = [
   { label: "Massage", value: "Massage" },
   { label: "Friends/Family", value: "Friends/Family" },
 ];
-// footer icon
-export const FooterLinks = [
-  {
-    title: "Links",
-    link: [
-      { links: "Home", path: "#Hogar" },
-      { links: "About", path: "#Misión" },
-      { links: "Attorneys", path: "#Tragamonedas" },
-      { links: "Practice Areas", path: "#Porqué" },
-      { links: "Results", path: "#Ofertas" },
-      { links: "Media", path: "#Ofertas" },
-    ],
-  },
-  {
-    title: "Company",
-    link: [
-      { links: "Contact Us", path: "/" },
-      { links: "Locations", path: "/" },
-      { links: "Our Mission", path: "/" },
-    ],
-  },
-  {
-    title: "Services",
-    link: [
-      { links: "Privacy Policy", path: "#" },
-      { links: "Terms of Services", path: "#" },
-    ],
-  },
-];
+
 export const FooterIcon = [
   {
     link: [
@@ -249,7 +250,7 @@ export const FooterIcon = [
         icon: <Instagram />,
         path: "https://www.instagram.com/accounts/login/",
       },
-      { icon: <Linkedin />, path: "linkedin.com" },
+      { icon: <Linkedin />, path: "https://www.linkedin.com/" },
       { icon: <YouTube />, path: "https://youtube.com/" },
       { icon: <GooglePay />, path: "https://pay.google.com/about/" },
     ],

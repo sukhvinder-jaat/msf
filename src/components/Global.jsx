@@ -18,6 +18,14 @@ const Global = () => {
     infinite: true,
     vertical: true,
     centerMode: true,
+    responsive: [
+      {
+        breakpoint: 725,
+        settings: {
+          loop: false,
+        },
+      },
+    ],
   };
   const sliderRef = useRef(null);
 
@@ -36,7 +44,10 @@ const Global = () => {
     }
   }, []);
   return (
-    <div className="bg-black overflow-hidden relative pb-[107px]" id="global">
+    <div
+      className="bg-black overflow-hidden relative lg:pb-0 pb-10"
+      id="global"
+    >
       {/* Half circle icon */}
       <span className="start-[-5px] absolute md:top-[35%] top-[15%] lg:block hidden">
         <HalfCircle />
@@ -55,7 +66,7 @@ const Global = () => {
 
       {/* Main content */}
       <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3">
-        <div className="flex flex-wrap py-10 lg:justify-between justify-center">
+        <div className="flex flex-wrap pt-10 lg:justify-between justify-center">
           {/* Left side */}
           <div className="lg:w-6/12 px-3 relative">
             {/* Images */}
@@ -87,7 +98,7 @@ const Global = () => {
               {/* Mapping through global cards */}
               {globalCard.map((value, index) => (
                 <div
-                  className="w-full md:py-9 py-5 md:px-7 px-4 border border-lightGray rounded my-6 relative group transition-all ease-linear duration-300"
+                  className="w-full md:py-9 py-5 md:px-7 px-4 border border-lightGray rounded my-6 relative group transition-all ease-linear duration-[0.3s]"
                   key={index}
                 >
                   <div className="flex sm:items-center sm:flex-row flex-col gap-2 sm:mb-0 mb-2">
@@ -105,7 +116,7 @@ const Global = () => {
                     {value.description}
                   </p>
                   {/* Divider */}
-                  <div className="absolute top-[50%] w-[10px] h-[120px] start-0 bg-transparent translate-y-[-50%] transition-all ease-linear duration-300"></div>
+                  <div className="absolute top-[50%] w-[10px] h-[120px] start-0 bg-transparent translate-y-[-50%] transition-all ease-linear duration-[0.3s]"></div>
                 </div>
               ))}
             </Slider>

@@ -67,7 +67,7 @@ const Hero = () => {
           />
         </div>
         {/* Main title */}
-        <p className="lg:text-8xl sm:text-6xl text-3xl font-Bahnschrift font-bold text-white lg:leading-[96px] mb-9  relative z-10">
+        <p className="lg:text-8xl sm:text-6xl text-3xl font-Bahnschrift font-bold text-white lg:leading-[96px] leading-[normal] mb-9  relative z-10">
           <span className="md:hidden"> America’s Leading</span>{" "}
           <span className="text-orange font-light">Sexual Abuse</span> Law Firm
         </p>
@@ -110,7 +110,7 @@ const Hero = () => {
                 id="videoElement"
                 onClick={videoPlayHandler}
                 controls
-                className="w-full h-full xl:max-h-[355px] max-h-[302px]"
+                className="w-full h-full xl:max-h-[355px] sm:max-h-[302px] max-h-[214px] object-cover"
                 poster={"/assets/images/hero/women.webp"}
               >
                 <source

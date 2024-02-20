@@ -21,7 +21,11 @@ const California = () => {
         <HalfCircle />
       </span>
       {/* Content */}
-      <div className="xl:max-w-[1140px] mx-auto xl:px-0 px-3 relative z-10">
+      <div
+        className="xl:max-w-[1140px] mx-auto xl:px-0 px-3 relative z-10"
+        data-aos-offset="-1000"
+        data-aos="zoom-out-down"
+      >
         {/* Main heading */}
         <p className="font-Bahnschrift font-light md:text-5xl sm:text-4xl text-3xl text-white text-center max-w-[716px] mx-auto leading-[normal]">
           California{" "}
@@ -38,7 +42,7 @@ const California = () => {
           and Fortune 500 companies.
         </p>
         {/* Additional details */}
-        <p className="font-Poppins font-normal text-sm md:text-base text-baba text-center max-w-[868px] mx-auto mt-4">
+        <p className="font-Poppins font-normal text-sm md:text-base text-baba text-center max-w-[868px] mx-auto mt-5">
           If you or a loved one is a survivor of sexual violence and abuse,
           please{" "}
           <span className="font-bold text-slat">
@@ -46,7 +50,7 @@ const California = () => {
           </span>{" "}
           for a free, 100% confidential consultation regarding your case.
         </p>
-        <p className="font-Poppins font-normal text-sm md:text-base text-baba text-center max-w-[868px] mx-auto mt-4 mb-12">
+        <p className="font-Poppins font-normal text-sm md:text-base text-baba text-center max-w-[868px] mx-auto mt-5 mb-12">
           You deserve closure, and any responsible parties deserve justice for
           their despicable actions. Let a trusted California sexual abuse lawyer
           at our firm help you today.

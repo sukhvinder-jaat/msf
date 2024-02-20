@@ -80,7 +80,7 @@ const GetUpdate = () => {
   };
 
   return (
-    <div className=" bg-white md:pt-36 pt-20 relative" id="contact">
+    <div className=" bg-white lg:pt-36 pt-20 relative" id="contact">
       <span className=" absolute top-[31%] start-[-5px] xl:block hidden">
         <HalfCircle />
       </span>
@@ -199,8 +199,10 @@ const GetUpdate = () => {
                 The use of this website or contact form to communicate with this
                 firm or any of its attorneys/members does not establish an
                 attorney-client relationship. Time-sensitive information should
-                not be sent through this form. All information provided will be
-                kept strictly confidential.
+                not be sent through this form.{" "}
+                <span className="font-semibold text-lightBlack">
+                  All information provided will be kept strictly confidential.
+                </span>
               </p>
               <div className=" flex items-center gap-5 mt-7 relative">
                 {/* DISCLAIMER checkbox */}
@@ -217,8 +219,8 @@ const GetUpdate = () => {
                     className="assent_slat w-6 h-5"
                   />
                   {error && formData.checkBox === false && (
-                    <p className="text-red-900 uppercase text-[12px] font-Bahnschrift font-normal flex items-start absolute bottom-[-15px] text-nowrap">
-                      check if you HAVE READ THIS DISCLAIMER
+                    <p className="text-red-900 capitalize text-[12px] font-Bahnschrift font-normal flex items-start absolute bottom-[-15px] text-nowrap">
+                      check if you have read the disclaimer
                     </p>
                   )}
                 </div>
